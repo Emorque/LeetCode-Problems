@@ -12,3 +12,4 @@
 | 6/23/24 | 215 | Kth Largest Element in an Array   | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)        |
 | 6/25/24 | 20  | Valid Parentheses                 | Easy       | [Here](https://leetcode.com/problems/valid-parentheses/description/)                      |
 | 6/25/24 | 703 | Kth Largest Element in a Stream   | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)        |
+| 6/27/24 | 445 | Add Two Numbers II                | Medium     | [Here](https://leetcode.com/problems/add-two-numbers-ii/description/)                     |
