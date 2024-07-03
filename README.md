@@ -13,3 +13,4 @@
 | 6/25/24 | 20  | Valid Parentheses                 | Easy       | [Here](https://leetcode.com/problems/valid-parentheses/description/)                      |
 | 6/25/24 | 703 | Kth Largest Element in a Stream   | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)        |
 | 6/27/24 | 445 | Add Two Numbers II                | Medium     | [Here](https://leetcode.com/problems/add-two-numbers-ii/description/)                     |
+| 7/2/24  | 128 | Longest Consecutive Sequence      | Medium     | [Here](https://leetcode.com/problems/longest-consecutive-sequence/description/)           |
