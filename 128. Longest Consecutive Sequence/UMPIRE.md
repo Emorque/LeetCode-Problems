@@ -52,8 +52,7 @@
             else:
                 longest_sequence = max(longest_sequence, curr_sequence)
                 curr_sequence = 1
-        return max(curr_sequence, longest_sequence)
- -->
+        return max(curr_sequence, longest_sequence) -->
 
 6. Share at least one strong/weak area of your algorithm or future potential work:
 - One strong area is that it is very efficient relatively speaking, which I was surprised, I figured set would be more efficient. 

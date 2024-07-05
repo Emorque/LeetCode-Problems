@@ -15,3 +15,5 @@
 | 6/27/24 | 445 | Add Two Numbers II                | Medium     | [Here](https://leetcode.com/problems/add-two-numbers-ii/description/)                     |
 | 7/2/24  | 128 | Longest Consecutive Sequence      | Medium     | [Here](https://leetcode.com/problems/longest-consecutive-sequence/description/)           |
 | 7/3/24  | 155 | Min Stack                         | Medium     | [Here](https://leetcode.com/problems/min-stack/description/)                              |
+| 7/5/24  | 142 | Linked List Cycle II              | Medium     | [Here](https://leetcode.com/problems/linked-list-cycle-ii/description/)                   |
+| 7/5/24  | 232 | Implement Queue using Stacks      | Easy       | [Here](https://leetcode.com/problems/implement-queue-using-stacks/description/)           |
