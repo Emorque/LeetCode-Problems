@@ -17,3 +17,7 @@
 | 7/3/24  | 155 | Min Stack                         | Medium     | [Here](https://leetcode.com/problems/min-stack/description/)                              |
 | 7/5/24  | 142 | Linked List Cycle II              | Medium     | [Here](https://leetcode.com/problems/linked-list-cycle-ii/description/)                   |
 | 7/5/24  | 232 | Implement Queue using Stacks      | Easy       | [Here](https://leetcode.com/problems/implement-queue-using-stacks/description/)           |
+| 7/6/24  | 680 | Valid Palindrome II               | Easy       | [Here](https://leetcode.com/problems/valid-palindrome-ii/description/)                    |
+| 7/6/24  | 821 | Shortest Distance to a Character  | Easy       | [Here](https://leetcode.com/problems/shortest-distance-to-a-character/description/)       |
+| 7/6/24  | 75  | Sort Colors                       | Medium     | [Here](https://leetcode.com/problems/sort-colors/description/)                            |
+| 7/6/24  | 238 | Product of Array Except Self      | Medium     | [Here](https://leetcode.com/problems/product-of-array-except-self/description/)           |
