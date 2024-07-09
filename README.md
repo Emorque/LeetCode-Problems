@@ -22,5 +22,5 @@
 | 7/6/24  | 75  | Sort Colors                            | Medium     | [Here](https://leetcode.com/problems/sort-colors/description/)                            |
 | 7/6/24  | 238 | Product of Array Except Self           | Medium     | [Here](https://leetcode.com/problems/product-of-array-except-self/description/)           |
 | 7/7/24  | 82  | Remove Duplicates from Sorted List II  | Medium     | [Here](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/)  |
-
 | 7/8/24  | 1598| Crawler Log Folder                     | Easy       | [Here](https://leetcode.com/problems/crawler-log-folder/description/)                     |
+| 7/9/24  | 50  | Pow(x, n)                              | Medium     | [Here](https://leetcode.com/problems/powx-n/description/)                                 |
