@@ -24,3 +24,4 @@
 | 7/7/24  | 82  | Remove Duplicates from Sorted List II  | Medium     | [Here](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/)  |
 | 7/8/24  | 1598| Crawler Log Folder                     | Easy       | [Here](https://leetcode.com/problems/crawler-log-folder/description/)                     |
 | 7/9/24  | 50  | Pow(x, n)                              | Medium     | [Here](https://leetcode.com/problems/powx-n/description/)                                 |
+| 7/9/24  | 875 | Koko Eating Bananas                    | Medium     | [Here](https://leetcode.com/problems/koko-eating-bananas/description/)                    |
