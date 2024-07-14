@@ -24,6 +24,10 @@
 | 7/7/24  | 82  | Remove Duplicates from Sorted List II  | Medium     | [Here](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/)  |
 | 7/8/24  | 1598| Crawler Log Folder                     | Easy       | [Here](https://leetcode.com/problems/crawler-log-folder/description/)                     |
 | 7/9/24  | 50  | Pow(x, n)                              | Medium     | [Here](https://leetcode.com/problems/powx-n/description/)                                 |
-| 7/9/24  | 875 | Koko Eating Bananas                    | Medium     | [Here](https://leetcode.com/problems/koko-eating-bananas/description/)                    |
-| 7/10/24 | 11  | Container With Most Water              | Medium     | [Here](https://leetcode.com/problems/container-with-most-water/description/)              |
-| 7/11/24 | 56  | Merge Intervals                        | Medium     | [Here](https://leetcode.com/problems/merge-intervals/description/)                        |
+| 7/10/24 | 875 | Koko Eating Bananas                    | Medium     | [Here](https://leetcode.com/problems/koko-eating-bananas/description/)                    |
+| 7/11/24 | 11  | Container With Most Water              | Medium     | [Here](https://leetcode.com/problems/container-with-most-water/description/)              |
+| 7/12/24 | 56  | Merge Intervals                        | Medium     | [Here](https://leetcode.com/problems/merge-intervals/description/)                        |
+| 7/13/24 | 226 | Invert Binary Tree                     | Easy       | [Here](https://leetcode.com/problems/invert-binary-tree/description/)                     |
+| 7/13/24 | 104 | Maximum Depth of Binary Tree           | Easy       | [Here](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)           |
+| 7/13/24 | 257 | Binary Tree Paths                      | Easy       | [Here](https://leetcode.com/problems/binary-tree-paths/description/)                      |
+| 7/13/24 | 110 | Balanced Binary Tree                   | Easy       | [Here](https://leetcode.com/problems/balanced-binary-tree/description/)                   |
