@@ -31,3 +31,5 @@
 | 7/13/24 | 104 | Maximum Depth of Binary Tree           | Easy       | [Here](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)           |
 | 7/13/24 | 257 | Binary Tree Paths                      | Easy       | [Here](https://leetcode.com/problems/binary-tree-paths/description/)                      |
 | 7/13/24 | 110 | Balanced Binary Tree                   | Easy       | [Here](https://leetcode.com/problems/balanced-binary-tree/description/)                   |
+| 7/15/24 | 111 | Minimum Depth of Binary Tree           | Easy       | [Here](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/)           |
+| 7/15/24 | 2196| Create Binary Tree From Descriptions   | Medium     | [Here](https://leetcode.com/problems/create-binary-tree-from-descriptions/description/)   |
