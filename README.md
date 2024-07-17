@@ -35,3 +35,4 @@
 | 7/15/24 | 2196| Create Binary Tree From Descriptions   | Medium     | [Here](https://leetcode.com/problems/create-binary-tree-from-descriptions/description/)                        |
 | 7/16/24 | 94  | Binary Tree Inorder Traversal          | Easy       | [Here](https://leetcode.com/problems/create-binary-tree-from-descriptions/description/)                        |
 | 7/16/24 | 2096| S-by-S Directions From a Binary Tree...| Medium     | [Here](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/description/)  |
+| 7/17/24 | 1110| Delete Nodes And Return Forest         | Medium     | [Here](https://leetcode.com/problems/delete-nodes-and-return-forest/description/)                              |
