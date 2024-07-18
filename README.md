@@ -36,3 +36,6 @@
 | 7/16/24 | 94  | Binary Tree Inorder Traversal          | Easy       | [Here](https://leetcode.com/problems/create-binary-tree-from-descriptions/description/)                        |
 | 7/16/24 | 2096| S-by-S Directions From a Binary Tree...| Medium     | [Here](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/description/)  |
 | 7/17/24 | 1110| Delete Nodes And Return Forest         | Medium     | [Here](https://leetcode.com/problems/delete-nodes-and-return-forest/description/)                              |
+| 7/18/24 | 101 | Symmetric Tree                         | Easy       | [Here](https://leetcode.com/problems/symmetric-tree/description/)                                              |
+| 7/18/24 | 543 | Diameter of Binary Tree                | Easy       | [Here](https://leetcode.com/problems/diameter-of-binary-tree/description/)                                     |
+| 7/18/24 | 1530| Number of Good Leaf Nodes Pairs        | Medium     | [Here](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/)                             |
