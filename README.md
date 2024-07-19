@@ -39,3 +39,4 @@
 | 7/18/24 | 101 | Symmetric Tree                         | Easy       | [Here](https://leetcode.com/problems/symmetric-tree/description/)                                              |
 | 7/18/24 | 543 | Diameter of Binary Tree                | Easy       | [Here](https://leetcode.com/problems/diameter-of-binary-tree/description/)                                     |
 | 7/18/24 | 1530| Number of Good Leaf Nodes Pairs        | Medium     | [Here](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/)                             |
+| 7/18/24 | 1380| Lucky Numbers in a Matrix              | Easy       | [Here](https://leetcode.com/problems/lucky-numbers-in-a-matrix/description/)                                   |
