@@ -39,4 +39,8 @@
 | 7/18/24 | 101 | Symmetric Tree                         | Easy       | [Here](https://leetcode.com/problems/symmetric-tree/description/)                                              |
 | 7/18/24 | 543 | Diameter of Binary Tree                | Easy       | [Here](https://leetcode.com/problems/diameter-of-binary-tree/description/)                                     |
 | 7/18/24 | 1530| Number of Good Leaf Nodes Pairs        | Medium     | [Here](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/)                             |
-| 7/18/24 | 1380| Lucky Numbers in a Matrix              | Easy       | [Here](https://leetcode.com/problems/lucky-numbers-in-a-matrix/description/)                                   |
+| 7/19/24 | 1380| Lucky Numbers in a Matrix              | Easy       | [Here](https://leetcode.com/problems/lucky-numbers-in-a-matrix/description/)                                   |
+| 7/20/24 | 102 | Binary Tree Level Order Traversal      | Medium     | [Here](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)                           |
+| 7/20/24 | 863 | All Nodes Distance K in Binary Tree    | Medium     | [Here](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/description/)                         |
+| 7/20/24 | 701 | Insert into a Binary Search Tree       | Medium     | [Here](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/)                            |
+| 7/20/24 | 230 | Kth Smallest Element in a BST          | Medium     | [Here](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/)                               |
