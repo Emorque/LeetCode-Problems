@@ -44,3 +44,4 @@
 | 7/20/24 | 863 | All Nodes Distance K in Binary Tree    | Medium     | [Here](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/description/)                         |
 | 7/20/24 | 701 | Insert into a Binary Search Tree       | Medium     | [Here](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/)                            |
 | 7/20/24 | 230 | Kth Smallest Element in a BST          | Medium     | [Here](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/)                               |
+| 7/21/24 | 979 | Distribute Coins in Binary Tree        | Medium     | [Here](https://leetcode.com/problems/distribute-coins-in-binary-tree/description/)                             |
