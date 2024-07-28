@@ -47,3 +47,10 @@
 | 7/21/24 | 979 | Distribute Coins in Binary Tree        | Medium     | [Here](https://leetcode.com/problems/distribute-coins-in-binary-tree/description/)                             |
 | 7/22/24 | 236 | Lowest Common Ancestor of a Binary Tree| Medium     | [Here](https://leetcode.com/problems/distribute-coins-in-binary-tree/description/)                             |
 | 7/25/24 | 98  | Validate Binary Search Tree            | Medium     | [Here](https://leetcode.com/problems/validate-binary-search-tree/description/)                                 |
+| 7/28/24 | 509 | Fibonacci Number                       | Easy       | [Here](https://leetcode.com/problems/fibonacci-number/description/)                                            |
+| 7/28/24 | 746 | Min Cost Climbing Stairs               | Easy       | [Here](https://leetcode.com/problems/min-cost-climbing-stairs/description/)                                    |
+| 7/28/24 | 832 | Flipping an Image                      | Easy       | [Here](https://leetcode.com/problems/flipping-an-image/description/)                                           |
+| 7/28/24 | 867 | Transpose Matrix                       | Easy       | [Here](https://leetcode.com/problems/transpose-matrix/description/)                                            |
+| 7/28/24 | 200 | Number of Islands                      | Medium     | [Here](https://leetcode.com/problems/number-of-islands/description/)                                           |
+| 7/28/24 | 695 | Max Area of Island                     | Medium     | [Here](https://leetcode.com/problems/max-area-of-island/description/)                                          |
+
