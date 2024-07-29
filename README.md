@@ -53,4 +53,4 @@
 | 7/28/24 | 867 | Transpose Matrix                       | Easy       | [Here](https://leetcode.com/problems/transpose-matrix/description/)                                            |
 | 7/28/24 | 200 | Number of Islands                      | Medium     | [Here](https://leetcode.com/problems/number-of-islands/description/)                                           |
 | 7/28/24 | 695 | Max Area of Island                     | Medium     | [Here](https://leetcode.com/problems/max-area-of-island/description/)                                          |
-
+| 7/29/24 | 48  | Rotate Image                           | Medium     | [Here](https://leetcode.com/problems/rotate-image/description/)                                                |
