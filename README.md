@@ -55,3 +55,4 @@
 | 7/28/24 | 695 | Max Area of Island                     | Medium     | [Here](https://leetcode.com/problems/max-area-of-island/description/)                                          |
 | 7/29/24 | 48  | Rotate Image                           | Medium     | [Here](https://leetcode.com/problems/rotate-image/description/)                                                |
 | 7/30/24 | 54  | Spiral Matrix                          | Medium     | [Here](https://leetcode.com/problems/spiral-matrix/description/)                                               |
+| 7/31/24 | 419 | Battleships in a Board                 | Medium     | [Here](https://leetcode.com/problems/battleships-in-a-board/description/)                                      |
