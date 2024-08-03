@@ -57,4 +57,5 @@
 | 7/30/24 | 54  | Spiral Matrix                          | Medium     | [Here](https://leetcode.com/problems/spiral-matrix/description/)                                               |
 | 7/31/24 | 419 | Battleships in a Board                 | Medium     | [Here](https://leetcode.com/problems/battleships-in-a-board/description/)                                      |
 | 8/1/24  | 994 | Rotting Oranges                        | Medium     | [Here](https://leetcode.com/problems/rotting-oranges/description/)                                             |
- 
+| 8/3/24  | 997 | Find the Town Judge                    | Easy       | [Here](https://leetcode.com/problems/find-the-town-judge/description/)                                         |
+| 8/3/24  | 1791| Find Center of Star Graph              | Easy       | [Here](https://leetcode.com/problems/find-center-of-star-graph/description/)                                   |
