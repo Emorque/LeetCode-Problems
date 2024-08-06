@@ -62,3 +62,4 @@
 | 8/4/24  | 121 | Best Time to Buy and Sell Stock        | Easy       | [Here](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)                             |
 | 8/4/24  | 118 | Pascal's Triangle                      | Easy       | [Here](https://leetcode.com/problems/pascals-triangle/description/)                                            |
 | 8/5/24  | 119 | Pascal's Triangle II                   | Easy       | [Here](https://leetcode.com/problems/pascals-triangle-ii/description/)                                         |
+| 8/6/24  | 1971| Find if Path Exists in Graph           | Easy       | [Here](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)                                |
