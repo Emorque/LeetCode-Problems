@@ -63,4 +63,7 @@
 | 8/4/24  | 118 | Pascal's Triangle                      | Easy       | [Here](https://leetcode.com/problems/pascals-triangle/description/)                                            |
 | 8/5/24  | 119 | Pascal's Triangle II                   | Easy       | [Here](https://leetcode.com/problems/pascals-triangle-ii/description/)                                         |
 | 8/6/24  | 1971| Find if Path Exists in Graph           | Easy       | [Here](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)                                |
-| 8/7/24  | 394 | Decode String                          | Easy       | [Here](https://leetcode.com/problems/decode-string/description/)                                |
+| 8/7/24  | 394 | Decode String                          | Medium     | [Here](https://leetcode.com/problems/decode-string/description/)                                               |
+| 8/8/24  | 623 | Add One Row to Tree                    | Medium     | [Here](https://leetcode.com/problems/add-one-row-to-tree/description/)                                         |
+
+
