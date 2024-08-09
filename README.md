@@ -65,5 +65,7 @@
 | 8/6/24  | 1971| Find if Path Exists in Graph           | Easy       | [Here](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)                                |
 | 8/7/24  | 394 | Decode String                          | Medium     | [Here](https://leetcode.com/problems/decode-string/description/)                                               |
 | 8/8/24  | 623 | Add One Row to Tree                    | Medium     | [Here](https://leetcode.com/problems/add-one-row-to-tree/description/)                                         |
-
-
+| 8/9/24  | 217 | Contains Duplicate                     | Easy       | [Here](https://leetcode.com/problems/contains-duplicate/description/)                                          |
+| 8/9/24  | 242 | Valid Anagram                          | Easy       | [Here](https://leetcode.com/problems/valid-anagram/description/)                                               |
+| 8/9/24  | 1   | Two Sum                                | Easy       | [Here](https://leetcode.com/problems/two-sum/description/)                                                     |
+| 8/9/24  | 49  | Group Anagrams                         | Medium     | [Here](https://leetcode.com/problems/group-anagrams/description/)                                              |
