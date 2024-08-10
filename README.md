@@ -69,3 +69,4 @@
 | 8/9/24  | 242 | Valid Anagram                          | Easy       | [Here](https://leetcode.com/problems/valid-anagram/description/)                                               |
 | 8/9/24  | 1   | Two Sum                                | Easy       | [Here](https://leetcode.com/problems/two-sum/description/)                                                     |
 | 8/9/24  | 49  | Group Anagrams                         | Medium     | [Here](https://leetcode.com/problems/group-anagrams/description/)                                              |
+| 8/10/24 | 417 | Pacific Atlantic Water Flow            | Medium     | [Here](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)                                 |
