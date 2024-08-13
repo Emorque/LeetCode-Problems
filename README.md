@@ -70,3 +70,6 @@
 | 8/9/24  | 1   | Two Sum                                | Easy       | [Here](https://leetcode.com/problems/two-sum/description/)                                                     |
 | 8/9/24  | 49  | Group Anagrams                         | Medium     | [Here](https://leetcode.com/problems/group-anagrams/description/)                                              |
 | 8/10/24 | 417 | Pacific Atlantic Water Flow            | Medium     | [Here](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)                                 |
+| 8/12/24 | 347 | Top K Frequent Elements                | Medium     | [Here](https://leetcode.com/problems/top-k-frequent-elements/description/)                                     |
+| 8/13/24 | 733 | Flood Fill                             | Easy       | [Here](https://leetcode.com/problems/flood-fill/description/)                                                  |
+| 8/13/24 | 721 | Accounts Merge                         | Medium     | [Here](https://leetcode.com/problems/accounts-merge/description/)                                              |
