@@ -73,3 +73,10 @@
 | 8/12/24 | 347 | Top K Frequent Elements                | Medium     | [Here](https://leetcode.com/problems/top-k-frequent-elements/description/)                                     |
 | 8/13/24 | 733 | Flood Fill                             | Easy       | [Here](https://leetcode.com/problems/flood-fill/description/)                                                  |
 | 8/13/24 | 721 | Accounts Merge                         | Medium     | [Here](https://leetcode.com/problems/accounts-merge/description/)                                              |
+| 8/23/24 | 167 | Two Sum II - Input Array Is Sorted     | Medium     | [Here](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)                            |
+| 8/23/24 | 15  | 3Sum                                   | Medium     | [Here](https://leetcode.com/problems/3sum/description/)                                                        |
+| 8/23/24 | 42  | Trapping Rain Water                    | Hard       | [Here](https://leetcode.com/problems/trapping-rain-water/description/)                                         |
+
+
+
+
