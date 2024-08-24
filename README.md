@@ -76,7 +76,7 @@
 | 8/23/24 | 167 | Two Sum II - Input Array Is Sorted     | Medium     | [Here](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)                            |
 | 8/23/24 | 15  | 3Sum                                   | Medium     | [Here](https://leetcode.com/problems/3sum/description/)                                                        |
 | 8/23/24 | 42  | Trapping Rain Water                    | Hard       | [Here](https://leetcode.com/problems/trapping-rain-water/description/)                                         |
-
-
-
-
+| 8/24/24 | 150 | Evaluate Reverse Polish Notation       | Medium     | [Here](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)                            |
+| 8/24/24 | 22  | Generate Parentheses                   | Medium     | [Here](https://leetcode.com/problems/generate-parentheses/description/)                                        |
+| 8/24/24 | 739 | Daily Temperatures                     | Medium     | [Here](https://leetcode.com/problems/daily-temperatures/description/)                                          |
+| 8/24/24 | 853 | Car Fleet                              | Medium     | [Here](https://leetcode.com/problems/car-fleet/description/)                                                   |
