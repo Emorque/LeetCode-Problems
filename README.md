@@ -80,3 +80,7 @@
 | 8/24/24 | 22  | Generate Parentheses                   | Medium     | [Here](https://leetcode.com/problems/generate-parentheses/description/)                                        |
 | 8/24/24 | 739 | Daily Temperatures                     | Medium     | [Here](https://leetcode.com/problems/daily-temperatures/description/)                                          |
 | 8/24/24 | 853 | Car Fleet                              | Medium     | [Here](https://leetcode.com/problems/car-fleet/description/)                                                   |
+| 8/28/24 | 84  | Largest Rectangle in Histogram         | Hard       | [Here](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)                              |
+| 8/28/24 | 74  | Search a 2D Matrix                     | Medium     | [Here](https://leetcode.com/problems/search-a-2d-matrix/description/)                                          |
+| 8/28/24 | 153 |Find Minimum in Rotated Sorted Array    | Medium     | [Here](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)                        |
+| 8/28/24 | 33  | Search in Rotated Sorted Array         | Medium     | [Here](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)                              |
