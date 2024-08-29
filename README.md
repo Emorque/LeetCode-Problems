@@ -84,3 +84,6 @@
 | 8/28/24 | 74  | Search a 2D Matrix                     | Medium     | [Here](https://leetcode.com/problems/search-a-2d-matrix/description/)                                          |
 | 8/28/24 | 153 |Find Minimum in Rotated Sorted Array    | Medium     | [Here](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)                        |
 | 8/28/24 | 33  | Search in Rotated Sorted Array         | Medium     | [Here](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)                              |
+| 8/29/24 | 3   | Longest Substring W/o Repeating Chars. | Medium     | [Here](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)              |
+| 8/29/24 | 4   | Median of Two Sorted Arrays            | Hard       | [Here](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                 |
+| 8/29/24 | 981 | Time Based Key-Value Store             | Medium     | [Here](https://leetcode.com/problems/time-based-key-value-store/description/)                                  |
