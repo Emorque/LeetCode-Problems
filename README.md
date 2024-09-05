@@ -87,3 +87,10 @@
 | 8/29/24 | 3   | Longest Substring W/o Repeating Chars. | Medium     | [Here](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)              |
 | 8/29/24 | 4   | Median of Two Sorted Arrays            | Hard       | [Here](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                 |
 | 8/29/24 | 981 | Time Based Key-Value Store             | Medium     | [Here](https://leetcode.com/problems/time-based-key-value-store/description/)                                  |
+| 8/30/24 | 424 | Longest Repeating Character Replacement| Medium     | [Here](https://leetcode.com/problems/longest-repeating-character-replacement/description/)                     |
+| 9/2/24  | 567 | Permutation in String                  | Medium     | [Here](https://leetcode.com/problems/permutation-in-string/description/)                                       |
+| 9/4/24  | 206 | Reverse Linked List                    | Easy       | [Here](https://leetcode.com/problems/reverse-linked-list/description/)                                         |
+| 9/4/24  | 143 | Reorder List                           | Medium     | [Here](https://leetcode.com/problems/reorder-list/description/)                                                |
+| 9/4/24  | 138 | Copy List with Random Pointer          | Medium     | [Here](https://leetcode.com/problems/copy-list-with-random-pointer/description/)                               |
+| 9/4/24  | 141 | Linked List Cycle                      | Easy       | [Here](https://leetcode.com/problems/linked-list-cycle/description/)                                           |
+| 9/4/24  | 287 | Find the Duplicate Number              | Medium     | [Here](https://leetcode.com/problems/find-the-duplicate-number/description/)                                   |
