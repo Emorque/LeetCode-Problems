@@ -94,3 +94,6 @@
 | 9/4/24  | 138 | Copy List with Random Pointer          | Medium     | [Here](https://leetcode.com/problems/copy-list-with-random-pointer/description/)                               |
 | 9/4/24  | 141 | Linked List Cycle                      | Easy       | [Here](https://leetcode.com/problems/linked-list-cycle/description/)                                           |
 | 9/4/24  | 287 | Find the Duplicate Number              | Medium     | [Here](https://leetcode.com/problems/find-the-duplicate-number/description/)                                   |
+| 9/5/24  | 146 | LRU Cache                              | Easy       | [Here](https://leetcode.com/problems/lru-cache/description/)                                                   |
+| 9/5/24  | 572 | Subtree of Another Tree                | Easy       | [Here](https://leetcode.com/problems/subtree-of-another-tree/description/)                                     |
+| 9/5/24  | 235 | LCA of a Binary Search Tree            | Medium     | [Here](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)              |
