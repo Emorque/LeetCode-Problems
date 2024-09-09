@@ -94,6 +94,15 @@
 | 9/4/24  | 138 | Copy List with Random Pointer          | Medium     | [Here](https://leetcode.com/problems/copy-list-with-random-pointer/description/)                               |
 | 9/4/24  | 141 | Linked List Cycle                      | Easy       | [Here](https://leetcode.com/problems/linked-list-cycle/description/)                                           |
 | 9/4/24  | 287 | Find the Duplicate Number              | Medium     | [Here](https://leetcode.com/problems/find-the-duplicate-number/description/)                                   |
-| 9/5/24  | 146 | LRU Cache                              | Easy       | [Here](https://leetcode.com/problems/lru-cache/description/)                                                   |
+| 9/5/24  | 146 | LRU Cache                              | Medium     | [Here](https://leetcode.com/problems/lru-cache/description/)                                                   |
 | 9/5/24  | 572 | Subtree of Another Tree                | Easy       | [Here](https://leetcode.com/problems/subtree-of-another-tree/description/)                                     |
 | 9/5/24  | 235 | LCA of a Binary Search Tree            | Medium     | [Here](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)              |
+| 9/7/24  | 199 | Binary Tree Right Side View            | Medium     | [Here](https://leetcode.com/problems/binary-tree-right-side-view/description/)                                 |    
+| 9/7/24  | 1448| Count Good Nodes in Binary Tree        | Medium     | [Here](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/)                             |
+| 9/7/24  | 105 | Construct BT from Preorder and Inorder | Medium     | [Here](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)   |
+| 9/8/24  | 208 | Implement Trie (Prefix Tree)           | Medium     | [Here](https://leetcode.com/problems/implement-trie-prefix-tree/description/)                                  |
+| 9/8/24  | 211 | Design Add and Search Words Data Struc.| Medium     | [Here](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/)                  |
+| 9/8/24  | 973 | K Closest Points to Origin             | Medium     | [Here](https://leetcode.com/problems/k-closest-points-to-origin/description/)                                  |
+| 9/8/24  | 621 | Task Scheduler                         | Medium     | [Here](https://leetcode.com/problems/task-scheduler/description/)                                              |
+| 9/8/24  | 355 | Design Twitter                         | Medium     | [Here](https://leetcode.com/problems/design-twitter/description/)                                              |
+| 9/8/24  | 78  | Subsets                                | Medium     | [Here](https://leetcode.com/problems/subsets/description/)                                                     |
