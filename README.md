@@ -106,3 +106,10 @@
 | 9/8/24  | 621 | Task Scheduler                         | Medium     | [Here](https://leetcode.com/problems/task-scheduler/description/)                                              |
 | 9/8/24  | 355 | Design Twitter                         | Medium     | [Here](https://leetcode.com/problems/design-twitter/description/)                                              |
 | 9/8/24  | 78  | Subsets                                | Medium     | [Here](https://leetcode.com/problems/subsets/description/)                                                     |
+| 9/9/24  | 39  | Combination Sum                        | Medium     | [Here](https://leetcode.com/problems/combination-sum/description/)                                             |
+| 9/9/24  | 46  | Permutations                           | Medium     | [Here](https://leetcode.com/problems/permutations/description/)                                                |
+| 9/9/24  | 90  | Subsets II                             | Medium     | [Here](https://leetcode.com/problems/subsets-ii/description/)                                                  |
+| 9/9/24  | 40  | Combination Sum II                     | Medium     | [Here](https://leetcode.com/problems/combination-sum-ii/description/)                                          |
+| 9/9/24  | 79  | Word Search                            | Medium     | [Here](https://leetcode.com/problems/word-search/description/)                                                 |
+| 9/9/24  | 131 | Palindrome Partitioning                | Medium     | [Here](https://leetcode.com/problems/palindrome-partitioning/description/)                                     |
+| 9/9/24  | 17  | Letter Combinations of a Phone Number  | Medium     | [Here](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)                       |
