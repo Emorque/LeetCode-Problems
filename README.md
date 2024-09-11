@@ -113,3 +113,9 @@
 | 9/9/24  | 79  | Word Search                            | Medium     | [Here](https://leetcode.com/problems/word-search/description/)                                                 |
 | 9/9/24  | 131 | Palindrome Partitioning                | Medium     | [Here](https://leetcode.com/problems/palindrome-partitioning/description/)                                     |
 | 9/9/24  | 17  | Letter Combinations of a Phone Number  | Medium     | [Here](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)                       |
+| 9/10/24 | 57  | Insert Interval                        | Medium     | [Here](https://leetcode.com/problems/insert-interval/description/)                                             |
+| 9/10/24 | 435 | Non-overlapping Intervals              | Medium     | [Here](https://leetcode.com/problems/non-overlapping-intervals/description/)                                   |
+| 9/10/24 | 53  | Maximum Subarray                       | Medium     | [Here](https://leetcode.com/problems/maximum-subarray/description/)                                            |
+| 9/10/24 | 55  | Jump Game                              | Medium     | [Here](https://leetcode.com/problems/jump-game/description/)                                                   |
+| 9/10/24 | 45  | Jump Game II                           | Medium     | [Here](https://leetcode.com/problems/jump-game-ii/description/)                                                |
+| 9/10/24 | 134 | Gas Station                            | Medium     | [Here](https://leetcode.com/problems/gas-station/description/)                                                 |
