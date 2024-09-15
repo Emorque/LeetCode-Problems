@@ -1,31 +1,29 @@
 1. Share questions you would ask to help understand the question:
-- Can there by less than 2 steps?
-- Can there be cases where there are two journeys that have the same costs?
+- Can any costs be negative or 0?
+- Are we guarenteed at least two steps?
+- Can the last step we take be the last two numbers in the list?
 
 2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Dynamic Programming (Likely)
-- Bottom-Up (Likely)
+- DP
 
 3. Write out in plain English what you want to do: 
-- So, from this problem, you can only go up at 1 or 2 steps at a time.
-- This means that the steps from the 2 second step onward is just a sum of the current step's cost + the less of the steps' costs that are right below it (step right below it and the step below that one)
-- So, what can be done, is that I iterate through the given input at index 2 and then iterate, changing the current step to the sum of its costs to the min of the 2 previous steps
-- Then, return the min of the top of steps, since you can go from the 2 to the last step to the end
+- After going through an example logic, I realized that to reach a step, the ideal choice to get go from the step that costs the least (from the choice of two prev steps):
+    - [1,2,3]
+    - If I want to reach 3 in the least cost and my options are index 0, and 1. I would want to go with the step that costs the least (index 0)
+- since we start from either index 0 or 1, we can iterate from index 2 to the end and just perform this logic. 
+- the last index should be the path of the lowest cost
 
 4. Translate each sub-problem into pseudocode:
-- initialize costLength by calculating length of cost
-- for i in range (2, costLength -1):
-    - cost[i] = cost[i] + min(cost[i-1], cost[i-2])
-- return min(cost[costLength]-1, cost[costLength]-2)
+- for i in range(2, len(cost)):
+    - cost[i] += min(cost[i - 1], cost[i - 2])
+- return cost[-1]
 
-6. Translate the pseudocode into Python and share your final answer:
+5. Translate the pseudocode into Python and share your final answer:
   <!-- class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
-        costLength = len(cost)
-        for i in range(2, costLength):
-            cost[i] = cost[i] + min(cost[i - 1], cost[i - 2])
-        return min(cost[costLength - 1], cost[costLength -2]) -->
+        for i in range(2, len(cost)):
+            cost[i] += min(cost[i - 1], cost[i - 2])
+        return min(cost[-1], cost[-2]) -->
 
 6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that my algorithm does not use additional data structures nor a recursion stack, it just edits the given input
-- One weak area is that it may not be the most readible algorithm
+- One strong area is that this algorithm does work inplace and builds on top of previous work

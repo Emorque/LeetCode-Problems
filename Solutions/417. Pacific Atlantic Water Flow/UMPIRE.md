@@ -1,87 +1,80 @@
 1. Share questions you would ask to help understand the question:
-- Can there be multiple paths that a cell can take to reach the oceans?
+- Does the list needed to be in a certain order?
+- Can there be negative heights?
+- Are the cells in the top right and bottom left always flowing into both oceans?
 
 2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- DFS (Likely)
 - BFS (Likely)
+- DFS (Likely)
 
-3. Write out in plain English what you want to do:
-- One of the things that I realized that I want to try to incorporate is this logic:
-  - Starting from the current cell, if after traversing through neighboring cells, that current cell does not reach the Pacific and Atlantic oceans, then I know that all visited cells also DO NOT reach both oceans
-  - This can be broken up into the following problems:
-    - Starting from the current cell, how can I reach both oceans that know that I have hit both?
-    - How can I document visitied cells from that journey?
-  - A helper function utlizing DFS can be used
-  - Using recursion, the starting cell will branch off and all visited cells will be kept in a currently visited set.
-    - If both oceans are reached, append the starting cell to the output
-    - If not, append all cells that were in the currently vistied set to a all visited set (cells here do not need to be retraversed)
-  - return the output list 
+3. Write out in plain English what you want to do: 
+- What I am thinking of, is using a BFS so that for each time queue is iterated, we branch equally from one cell, as oppposed to DFS where we kind of commit to one path at a time
+- Within the BFS, I will use two booleans, one for each ocean, and if both oceans are hit, then those booleans turn true
+- I also had an interested idea, where if one cell does reach both oceans, then that one can be considered special. In future BFS's of other cells, if it reaches a cell that has reached the ocean, then we know right away that that cell will reach both oceans. 
 
 4. Translate each sub-problem into pseudocode:
-- Initialize a output list, and a visited set
-- have two booleans: one for each ocean starting at False
-- initialize a currently visiting set
-- create a helper dfs function, that takes in two parameters, current cell and starting cell
-  - use recursive dfs to traverse:
-    - if current cell in currently visited or visited or (pacfic and atlantic):
-      - return
-    - if current cell[0] or cell[1] == 0: set pacific to true
-    - if current cell[0] == len(heights-1) or cell[1] == len(heights[0]-1): set atlantic to true;
-    - if both booleans are true,
-      - append the starting cell to the output list
-      - add starting cell to visited set
-      - return 
-    - call dfs on all four neighbers
-  - create for loop that iterates through the rows and columns:
-    - call dfs on the current cell
-    - once returned:
-      - if both booleans are true:
-        - set both to false
-      - else:
-        - append the currently visited set to the visited set (for i in loop)
-  - return the output list
-    
+- Intialize and an output list
+- Iterate through the heights list
+- For each cell, perform BFS
+  - if that cell reaches both oceans, return True and add it to a marked set 
+- return the output list
+
+- BFS:
+  - starting from the queue, only append neighboring nodes if they are <= the current cell
+  - set booleans for each ocean, and set them to true if a cell is touching them
+  - if the queue is done and neither booleans are true, return False
+
 5. Translate the pseudocode into Python and share your final answer:
   <!-- class Solution:
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
-        output: List[List[int]] = []
-        currVisited = set()
-        pacific, atlantic = False, False
-        rows =  len(heights)-1
-        columns = len(heights[0])-1
+        output = []
+        marked = set()
 
-        def dfs(currCell: List[int], startCell: List[int]):
-            nonlocal pacific
-            nonlocal atlantic
-            i = currCell[0]
-            j = currCell[1]
-            if (i,j) in currVisited or (pacific and atlantic):
-                return
-            if currCell[0] == 0 or currCell[1] == 0:
-                pacific = True
-            if currCell[0] == rows or currCell[1] == columns:
-                atlantic = True
-            if pacific and atlantic:
-                output.append(startCell)
-                return
-            currVisited.add((i,j))
-            if i > 0 and heights[i][j] >= heights[i - 1][j]:
-                dfs([i-1, j], startCell)
-            if i < rows and (heights[i][j] >= heights[i + 1][j]):
-                dfs([i+1, j], startCell)
+        def bfs(coordinates) -> bool:
+            pacific, atlantic = False, False
+            visited = set()
+            queue = [coordinates]
+            
+            while queue:
+                r, c = queue.pop(0)
+                if r == 0 or c == 0:
+                    pacific = True
+                if r == len(heights) - 1 or c == len(heights[0]) - 1:
+                    atlantic = True
+                if pacific and atlantic or (r,c) in marked:
+                    return True
+                if (r, c) in visited:
+                    continue
 
-            if j > 0 and heights[i][j] >= heights[i][j-1]:
-                dfs([i, j-1], startCell)
-            if j < columns and heights[i][j] >= heights[i][j+1]:
-                dfs([i, j+1], startCell)
-        for i in range(rows+1):
-            for j in range(columns+1):
-                dfs([i,j], [i,j])
-                pacific, atlantic = False, False
-                currVisited = set()
-        return output -->
+                visited.add((r,c))
+
+                if r > 0 and heights[r - 1][c] <= heights[r][c]:
+                    queue.append((r - 1, c))
+                if r < len(heights) - 1 and heights[r + 1][c] <= heights[r][c]:
+                    queue.append((r + 1, c))
+
+                if c > 0 and heights[r][c - 1] <= heights[r][c]:
+                    queue.append((r, c - 1))
+                if c < len(heights[0]) - 1 and heights[r][c+1] <= heights[r][c]:
+                    queue.append((r, c + 1))
+            return pacific and atlantic 
+        
+        for i in range(len(heights)):
+            for j in range(len(heights[0])):
+                if bfs((i, j)):
+                    output.append([i, j])
+                    marked.add((i,j))
+        
+        return output
+         -->
 
 6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that any visited cells in the current dfs are not retravered
-- One weak area is that my initial plan of having a global set of cells that were detemined to not be able to reach any ocean (my logic from #3) did not work. I likely could have incorporated it if I had worked on it more, but I am glad that I at least have a currVisited set. 
-- Another weak area is that, since recursion is used, this algorithm will be slowly than if a queue and BFS were used
+- One strong area is that it does use a set to mark successful cells, which saves some processing
+- One weak area is that BFS is performed for each cell, which does get very costly, even with the marked set. There is a way to save some time further
+  - For example, if the cell was not able to return True in bfs, then every cell that was in it's path cannot be starting cells (they will never reach both oceans if they are the start of a bfs)
+  - This however, requires another data structure which I would do I if I were to continue with this solution
+
+- A more efficient solution would be to start from the cells that I know cross one of the oceans, and then perform BFS from them to cells that are at greater heights, since the inverse of flowing from a cell down to the ocean, is to go from the ocean up to a cell
+  - Then cross examine the cells from the ocean's set of cell, and see if any cells are in both sets. Those cells are confirmed to be able to flow into both oceans
+  - This is much simplier and saves a lot of time as cells don't have to be retraversed
+  - This solution is in the py file too

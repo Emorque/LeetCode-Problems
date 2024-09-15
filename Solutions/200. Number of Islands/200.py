@@ -2,25 +2,29 @@ from typing import List
 
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
+        count = 0
         row = len(grid)
-        column = len(grid[0])
-        output = 0
+        col = len(grid[0])
 
-        def traverse(i: int, j : int):
-            grid[i][j] = '0'
-            if i + 1 < row and grid[i+1][j] == '1':
-                traverse(i+1, j)
-            if i - 1 > -1 and grid[i-1][j] == '1':
-                traverse(i-1, j)
-            if j + 1 < column and grid[i][j+1] == '1':
-                traverse(i, j+1)
-            if j - 1 > -1 and grid[i][j-1] == '1':
-                traverse(i, j-1)
+        def traverse(coordinates):
+            queue = [coordinates]
 
+            while queue:
+                r, c = queue.pop(0)
+                if r < 0 or r >= row or c < 0 or c >= col:
+                    continue
+                if grid[r][c] != "1":
+                    continue
+                grid[r][c] = "0"
+                queue.append((r + 1, c))
+                queue.append((r - 1, c))
+                queue.append((r, c + 1))
+                queue.append((r, c - 1))
+            
         for i in range(row):
-            for j in range(column):
-                if grid[i][j] == '1':
-                    output += 1
-                    traverse(i,j)
-
-        return output
+            for j in range(col):
+                if grid[i][j] == "1":
+                    traverse((i, j))
+                    count += 1
+        
+        return count

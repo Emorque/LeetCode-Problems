@@ -119,3 +119,32 @@
 | 9/10/24 | 55  | Jump Game                              | Medium     | [Here](https://leetcode.com/problems/jump-game/description/)                                                   |
 | 9/10/24 | 45  | Jump Game II                           | Medium     | [Here](https://leetcode.com/problems/jump-game-ii/description/)                                                |
 | 9/10/24 | 134 | Gas Station                            | Medium     | [Here](https://leetcode.com/problems/gas-station/description/)                                                 |
+| 9/12/24 | 846 | Hand of Straights                      | Medium     | [Here](https://leetcode.com/problems/hand-of-straights/description/)                                           |
+| 9/12/24 | 1899| Merge Triplets to Form Target Triplet  | Medium     | [Here](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/description/)                       |
+| 9/12/24 | 763 | Partition Labels                       | Medium     | [Here](https://leetcode.com/problems/partition-labels/description/)                                            |
+| 9/12/24 | 678 | Valid Parenthesis String               | Medium     | [Here](https://leetcode.com/problems/valid-parenthesis-string/description/)                                    |
+| 9/12/24 | 133 | Clone Graph                            | Medium     | [Here](https://leetcode.com/problems/clone-graph/description/)                                                 |
+
+
+
+| 9/13/24 | 130 | Surrounded Regions                     | Medium     | [Here](https://leetcode.com/problems/surrounded-regions/description/)                                          |
+
+| 9/13/24 | 207 | Course Schedule                        | Medium     | [Here](https://leetcode.com/problems/course-schedule/description/)                                             |
+
+| 9/13/24 | 210 | Course Schedule II                     | Medium     | [Here](https://leetcode.com/problems/course-schedule-ii/description/)                                          |
+
+| 9/13/24 | 684 | Redundant Connection                   | Medium     | [Here](https://leetcode.com/problems/redundant-connection/description/)                                        |
+
+| 9/13/24 | 70  | Climbing Stairs                        | Easy       | [Here](https://leetcode.com/problems/climbing-stairs/description/)                                             |
+
+| 9/13/24 | 198 | House Robber                           | Medium     | [Here](https://leetcode.com/problems/house-robber/description/)                                                |
+
+| 9/13/24 | 213 | House Robber II                        | Medium     | [Here](https://leetcode.com/problems/house-robber-ii/description/)                                             |
+
+| 9/13/24 | 5   | Longest Palindromic Substring          | Medium     | [Here](https://leetcode.com/problems/longest-palindromic-substring/description/)                               |
+
+| 9/13/24 | 647 | Palindromic Substrings                 | Medium     | [Here](https://leetcode.com/problems/palindromic-substrings/description/)                                      |
+
+| 9/13/24 | 91  | Decode Ways                            | Medium     | [Here](https://leetcode.com/problems/decode-ways/description/)                                                 |
+
+| 9/13/24 | 322 | Coin Change                            | Medium     | [Here](https://leetcode.com/problems/coin-change/description/)                                                 |

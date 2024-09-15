@@ -2,39 +2,88 @@ from typing import List
 
 class Solution:
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
-        output: List[List[int]] = []
-        currVisited = set()
-        pacific, atlantic = False, False
-        rows =  len(heights)-1
-        columns = len(heights[0])-1
+        output = []
+        marked = set()
 
-        def dfs(currCell: List[int], startCell: List[int]):
-            nonlocal pacific
-            nonlocal atlantic
-            i = currCell[0]
-            j = currCell[1]
-            if (i,j) in currVisited or (pacific and atlantic):
-                return
-            if currCell[0] == 0 or currCell[1] == 0:
-                pacific = True
-            if currCell[0] == rows or currCell[1] == columns:
-                atlantic = True
-            if pacific and atlantic:
-                output.append(startCell)
-                return
-            currVisited.add((i,j))
-            if i > 0 and heights[i][j] >= heights[i - 1][j]:
-                dfs([i-1, j], startCell)
-            if i < rows and (heights[i][j] >= heights[i + 1][j]):
-                dfs([i+1, j], startCell)
+        def bfs(coordinates) -> bool:
+            pacific, atlantic = False, False
+            visited = set()
+            queue = [coordinates]
+            
+            while queue:
+                r, c = queue.pop(0)
+                if r == 0 or c == 0:
+                    pacific = True
+                if r == len(heights) - 1 or c == len(heights[0]) - 1:
+                    atlantic = True
+                if pacific and atlantic or (r,c) in marked:
+                    return True
+                if (r, c) in visited:
+                    continue
 
-            if j > 0 and heights[i][j] >= heights[i][j-1]:
-                dfs([i, j-1], startCell)
-            if j < columns and heights[i][j] >= heights[i][j+1]:
-                dfs([i, j+1], startCell)
-        for i in range(rows+1):
-            for j in range(columns+1):
-                dfs([i,j], [i,j])
-                pacific, atlantic = False, False
-                currVisited = set()
+                visited.add((r,c))
+
+                if r > 0 and heights[r - 1][c] <= heights[r][c]:
+                    queue.append((r - 1, c))
+                if r < len(heights) - 1 and heights[r + 1][c] <= heights[r][c]:
+                    queue.append((r + 1, c))
+
+                if c > 0 and heights[r][c - 1] <= heights[r][c]:
+                    queue.append((r, c - 1))
+                if c < len(heights[0]) - 1 and heights[r][c+1] <= heights[r][c]:
+                    queue.append((r, c + 1))
+            return pacific and atlantic 
+        
+        for i in range(len(heights)):
+            for j in range(len(heights[0])):
+                if bfs((i, j)):
+                    output.append([i, j])
+                    marked.add((i,j))
+        
         return output
+        
+
+class Solution:
+    def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
+        pacific = set()
+        atlantic = set()
+
+        output = []
+
+        row = len(heights)
+        col = len(heights[0])
+
+        def bfs(coordiantes, ocean):
+            queue = [coordiantes]
+
+            while queue:
+                r, c = queue.pop(0)
+
+                if (r,c) in ocean:
+                    continue
+                ocean.add((r,c))
+
+                if r > 0 and heights[r - 1][c] >= heights[r][c]:
+                    queue.append((r- 1, c))
+                if r < row - 1 and heights[r + 1][c] >= heights[r][c]:
+                    queue.append((r + 1, c))
+
+                if c > 0 and heights[r][c -1] >= heights[r][c]:
+                    queue.append((r, c -1))
+                if c < col - 1 and heights[r][c + 1] >= heights[r][c]:
+                    queue.append((r, c + 1))
+
+        for i in range(col):
+            bfs((0, i), pacific)
+            bfs((row - 1, i), atlantic)
+        
+        for j in range(row):
+            bfs((j, 0), pacific)
+            bfs((j, col - 1), atlantic)
+
+        for height in pacific:
+            if height in atlantic:
+                output.append(height)
+
+        return output
+        
