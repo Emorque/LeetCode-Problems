@@ -124,27 +124,16 @@
 | 9/12/24 | 763 | Partition Labels                       | Medium     | [Here](https://leetcode.com/problems/partition-labels/description/)                                            |
 | 9/12/24 | 678 | Valid Parenthesis String               | Medium     | [Here](https://leetcode.com/problems/valid-parenthesis-string/description/)                                    |
 | 9/12/24 | 133 | Clone Graph                            | Medium     | [Here](https://leetcode.com/problems/clone-graph/description/)                                                 |
-
-
-
 | 9/13/24 | 130 | Surrounded Regions                     | Medium     | [Here](https://leetcode.com/problems/surrounded-regions/description/)                                          |
-
 | 9/13/24 | 207 | Course Schedule                        | Medium     | [Here](https://leetcode.com/problems/course-schedule/description/)                                             |
-
 | 9/13/24 | 210 | Course Schedule II                     | Medium     | [Here](https://leetcode.com/problems/course-schedule-ii/description/)                                          |
-
 | 9/13/24 | 684 | Redundant Connection                   | Medium     | [Here](https://leetcode.com/problems/redundant-connection/description/)                                        |
-
-| 9/13/24 | 70  | Climbing Stairs                        | Easy       | [Here](https://leetcode.com/problems/climbing-stairs/description/)                                             |
-
-| 9/13/24 | 198 | House Robber                           | Medium     | [Here](https://leetcode.com/problems/house-robber/description/)                                                |
-
-| 9/13/24 | 213 | House Robber II                        | Medium     | [Here](https://leetcode.com/problems/house-robber-ii/description/)                                             |
-
-| 9/13/24 | 5   | Longest Palindromic Substring          | Medium     | [Here](https://leetcode.com/problems/longest-palindromic-substring/description/)                               |
-
-| 9/13/24 | 647 | Palindromic Substrings                 | Medium     | [Here](https://leetcode.com/problems/palindromic-substrings/description/)                                      |
-
-| 9/13/24 | 91  | Decode Ways                            | Medium     | [Here](https://leetcode.com/problems/decode-ways/description/)                                                 |
-
-| 9/13/24 | 322 | Coin Change                            | Medium     | [Here](https://leetcode.com/problems/coin-change/description/)                                                 |
+| 9/15/24 | 70  | Climbing Stairs                        | Easy       | [Here](https://leetcode.com/problems/climbing-stairs/description/)                                             |
+| 9/15/24 | 198 | House Robber                           | Medium     | [Here](https://leetcode.com/problems/house-robber/description/)                                                |
+| 9/15/24 | 213 | House Robber II                        | Medium     | [Here](https://leetcode.com/problems/house-robber-ii/description/)                                             |
+| 9/15/24 | 5   | Longest Palindromic Substring          | Medium     | [Here](https://leetcode.com/problems/longest-palindromic-substring/description/)                               |
+| 9/15/24 | 647 | Palindromic Substrings                 | Medium     | [Here](https://leetcode.com/problems/palindromic-substrings/description/)                                      |
+| 9/15/24 | 91  | Decode Ways                            | Medium     | [Here](https://leetcode.com/problems/decode-ways/description/)                                                 |
+| 9/15/24 | 322 | Coin Change                            | Medium     | [Here](https://leetcode.com/problems/coin-change/description/)                                                 |
+| 9/15/24 | 152 | Maximum Product Subarray               | Medium     | [Here](https://leetcode.com/problems/maximum-product-subarray/description/)                                    |
+| 9/15/24 | 139 | Word Break                             | Medium     | [Here](https://leetcode.com/problems/word-break/description/)                                                  |
