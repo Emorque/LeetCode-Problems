@@ -137,3 +137,13 @@
 | 9/15/24 | 322 | Coin Change                            | Medium     | [Here](https://leetcode.com/problems/coin-change/description/)                                                 |
 | 9/15/24 | 152 | Maximum Product Subarray               | Medium     | [Here](https://leetcode.com/problems/maximum-product-subarray/description/)                                    |
 | 9/15/24 | 139 | Word Break                             | Medium     | [Here](https://leetcode.com/problems/word-break/description/)                                                  |
+| 9/16/24 | 300 | Longest Increasing Subsequence         | Medium     | [Here](https://leetcode.com/problems/longest-increasing-subsequence/description/)                              |
+| 9/16/24 | 416 | Partition Equal Subset Sum             | Medium     | [Here](https://leetcode.com/problems/partition-equal-subset-sum/description/)                                  |
+| 9/16/24 | 62  | Unique Paths                           | Medium     | [Here](https://leetcode.com/problems/unique-paths/description/)                                                |
+| 9/16/24 | 1143| Longest Common Subsequence             | Medium     | [Here](https://leetcode.com/problems/longest-common-subsequence/description/)                                  |
+| 9/16/24 | 309 | Best Time to Buy and Sell Stock w/ CD  | Medium     | [Here](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/)               |
+| 9/16/24 | 518 | Coin Change II                         | Medium     | [Here](https://leetcode.com/problems/coin-change-ii/description/)                                              |
+| 9/16/24 | 494 | Target Sum                             | Medium     | [Here](https://leetcode.com/problems/target-sum/description/)                                                  |
+| 9/16/24 | 97  | Interleaving String                    | Medium     | [Here](https://leetcode.com/problems/interleaving-string/description/)                                         |
+| 9/16/24 | 72  | Edit Distance                          | Medium     | [Here](https://leetcode.com/problems/edit-distance/description/)                                               |
+
