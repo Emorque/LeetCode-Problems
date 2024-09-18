@@ -146,4 +146,12 @@
 | 9/16/24 | 494 | Target Sum                             | Medium     | [Here](https://leetcode.com/problems/target-sum/description/)                                                  |
 | 9/16/24 | 97  | Interleaving String                    | Medium     | [Here](https://leetcode.com/problems/interleaving-string/description/)                                         |
 | 9/16/24 | 72  | Edit Distance                          | Medium     | [Here](https://leetcode.com/problems/edit-distance/description/)                                               |
-
+| 9/17/24 | 1584| Min Cost to Connect All Points         | Medium     | [Here](https://leetcode.com/problems/min-cost-to-connect-all-points/description/)                              |
+| 9/17/24 | 743 | Network Delay Time                     | Medium     | [Here](https://leetcode.com/problems/network-delay-time/description/)                                          |
+| 9/17/24 | 136 | Single Number                          | Easy       | [Here](https://leetcode.com/problems/single-number/description/)                                               |
+| 9/17/24 | 191 | Number of 1 Bits                       | Easy       | [Here](https://leetcode.com/problems/number-of-1-bits/description/)                                            |
+| 9/17/24 | 338 | Counting Bits                          | Easy       | [Here](https://leetcode.com/problems/counting-bits/description/)                                               |
+| 9/17/24 | 190 | Reverse Bits                           | Easy       | [Here](https://leetcode.com/problems/reverse-bits/description/)                                                |
+| 9/17/24 | 268 | Missing Number                         | Easy       | [Here](https://leetcode.com/problems/missing-number/description/)                                              |
+| 9/17/24 | 371 | Sum of Two Integers                    | Medium     | [Here](https://leetcode.com/problems/sum-of-two-integers/description/)                                         |
+| 9/17/24 | 7   | Reverse Integer                        | Medium     | [Here](https://leetcode.com/problems/reverse-integer/description/)                                             |
