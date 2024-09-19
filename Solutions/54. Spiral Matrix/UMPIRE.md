@@ -1,66 +1,56 @@
 1. Share questions you would ask to help understand the question:
-- Can the matrix be null or empty?
+- Can there be a case with either m and n are both 1?
+- What are the ranges that m and n can be?
+- Are the values all distinct?
+- By spiral, do you mean clockwise and then going into the next inner layer?
 
 2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Recursion (Likely)
-- BFS (Unlikely)
-  
+
+
 3. Write out in plain English what you want to do: 
-- So what this looks like, is that for a soltuion, I can simulate the traversal of a spiral 
-- Starting from the outer layer, go in a clock-wise fashion, iterating through the top row, right column, bottom row and left column
-- Then when that layer is done, traverse through the next inner layer and repeat, remembering to ensure that the current layer is tracked, so as to not read previous values
-- Append the current values throughout the traversals into an output list and return it at the end
+- Get the number of cols and rows and do the top most layer, making sure to not recheck already seen elements
+- Then go into the next layer, with a new set of boundaries
 
 4. Translate each sub-problem into pseudocode:
-- Initialize an output list 
-- Initialize a helper function that will traverse through the layers of the matrix 
-- Have its parameters be the length of the row, height of the columns and the current layer
-    - Have a base case where there is a single element in the layer 
-        - if layer >= the length/2 and >= the height/2
-    - Have a for loop that iterates through the layer clockwise
-        - row: for i in range(layer, length - layer - 1)
-        - column: for i in range (layer, height - layer - 1)
-        - append current values to output
-    - call the helper function again, but with layer + 1
-- Call helper(len(matrix), len(matrix[0]), 0)
-- return the output 
+- Set up the left, right and top, bottom boundaries of the grid
+- Then as I complete a row and col, readjust the boundaries 
+- Once the boundaries have all overlapped, the entire grid is traversed
+- Or in the loop, if either of the boundaries have overlapped (are equal), then output can be returned
 
 5. Translate the pseudocode into Python and share your final answer:
-  <!--class Solution:
+  <!-- class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        left, right = 0, len(matrix[0])
+        top, bottom = 0, len(matrix)
 
-        output : List[int] = []
+        output = []
 
-        def helper(row: int, column: int, layer: int):
-            if layer >= row/2 and layer >= column/2:
-                output.append(matrix[row//2][column//2])
-                return
+        while left < right and top < bottom:
+            # top Row
+            for i in range(left, right):
+                output.append(matrix[top][i])
+            top += 1
 
-            if len(output) > row * column:
-                return
+            # right Col
+            for i in range(top, bottom):
+                output.append(matrix[i][right - 1])
+            right -= 1
 
-            for i in range(layer, column - layer - 1):
-                output.append(matrix[layer][i])
+            if not (left < right and top < bottom):
+                return output
+            
+            # bottom Row
+            for i in range(right - 1, left - 1, -1):
+                output.append(matrix[bottom - 1][i])
+            bottom -= 1
 
-            for j in range(layer, row - layer - 1):
-                output.append(matrix[j][column - layer - 1])
+            # left Col
+            for i in range(bottom - 1, top - 1, -1):
+                output.append(matrix[i][left])
+            left += 1
 
-            for h in range(column - layer - 1, layer, -1):
-                output.append(matrix[row - layer - 1][h])
-
-            for k in range(row - layer - 1, layer, -1):
-                output.append(matrix[k][layer])
-
-            if not len(output) == row * column:
-                helper(row, column, layer + 1)
-                
-        helper(len(matrix), len(matrix[0]), 0)
-        while len(output) > len(matrix) * len(matrix[0]):
-            output.pop()
-        return output
- -->
+        return output -->
 
 6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that the algorithm is that it can be followed relatively easy, it just goes layer by layer, and traverses in a clockwise traversal
-- One weak area is that since I am using the recursion stack, for much larger matrixes, that call stack can get large
-- Another would be that there are more conditionals than I would like, that are there to cover edge cases. I would definetly work on this further to remove them
+- One strong area is that it breaks the problem into a smaller problem of getting dealing with the matrix at one layer at a time
+- One weak area is that there is some repeated elements in the code

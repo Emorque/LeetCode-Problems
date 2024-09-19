@@ -1,43 +1,41 @@
 1. Share questions you would ask to help understand the question:
-- How large can n get?
-- Can n be halved?
+- What are the ranges that x and n can be?
 
 2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Recursion (Likely)
-- Stack (Unlikely)
-  
+
+
 3. Write out in plain English what you want to do: 
-- The biggest thing to take note of is this constraint: -2^31 <= n <= 2^31-1
-- This means that if we were to do n recursive calls, it would quickly get out of hand
-- Since we are dealing with powers, we can use math to half the number of recursive calls needed. 
-    - for example: if we have 2^16. Instead of making 16 recursive calls, we can make 8, and then multiply that result with itself because 2^16 is equal to 2^8 * 2^8
-- Therefore, we just need base cases and this logic above to get the answer. 
+
 
 4. Translate each sub-problem into pseudocode:
-- if n is equal to 0, return 1
-- if n is equal to 1, return x
-- if n is equal to -1, return 1/x
+- One thing that can be done, is if n is a negative, we can treat it as positive, and at the end, return 1/result.
+    - for example: 2 ^ -3 = 1/2^3
 
-- then we do that halving logic from 3. and do:
-- answer = self.myPow(x, n//2)
-- Then we multiply it by itself. 
-- Add a conditional to check if n is even or odd. If n is odd, multiply again by just x. 
-- For example, if we have 2^17, we would then need 2^8 * 2^8 * 2
-- return the end product 
+
 
 5. Translate the pseudocode into Python and share your final answer:
   <!-- class Solution:
     def myPow(self, x: float, n: int) -> float:
-        if n == 0: return 1
-        elif n == 1: return x
-        elif n == -1: return 1/x
+        if n == 0:
+            return 1
+        if n == 1:
+            return x
 
-        answer = self.myPow(x, n // 2)
-        if (n % 2):
-            return answer * answer * x
+        if n > 0:
+            positive = True
         else:
-            return answer * answer -->
+            positive = False
+
+        halfPower = self.myPow(x, abs(n)//2)
+        answer = halfPower * halfPower
+        
+        if n % 2 == 1:
+            answer *= x
+        
+        return answer if positive else 1/answer
+
+         -->
 
 6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that it uses math to use less recursive calls
-- One weak area is that we are since we are using recursive, we are using memory. An alterative route could be to utilize a while loop to do the math in place. 
+- One strong area is that this algorithm is an efficient one with a time of O(logn) since the word is split in half because of how math works
+- One weak area is that this solution may not be clear one one doesn't know that a number to a power can be split up

@@ -155,3 +155,9 @@
 | 9/17/24 | 268 | Missing Number                         | Easy       | [Here](https://leetcode.com/problems/missing-number/description/)                                              |
 | 9/17/24 | 371 | Sum of Two Integers                    | Medium     | [Here](https://leetcode.com/problems/sum-of-two-integers/description/)                                         |
 | 9/17/24 | 7   | Reverse Integer                        | Medium     | [Here](https://leetcode.com/problems/reverse-integer/description/)                                             |
+| 9/18/24 | 787 | Cheapest Flights Within K Stops        | Medium     | [Here](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)                             |
+| 9/18/24 | 73  | Set Matrix Zeroes                      | Medium     | [Here](https://leetcode.com/problems/set-matrix-zeroes/description/)                                           |
+| 9/18/24 | 202 | Happy Number                           | Easy       | [Here](https://leetcode.com/problems/happy-number/description/)                                                |
+| 9/18/24 | 66  | Plus One                               | Easy       | [Here](https://leetcode.com/problems/plus-one/description/)                                                    |
+| 9/18/24 | 43  | Multiply Strings                       | Medium     | [Here](https://leetcode.com/problems/multiply-strings/description/)                                            |
+| 9/18/24 | 2013| Detect Squares                         | Medium     | [Here](https://leetcode.com/problems/detect-squares/description/)                                              |

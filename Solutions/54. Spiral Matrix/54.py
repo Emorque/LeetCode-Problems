@@ -2,33 +2,33 @@ from typing import List
 
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        left, right = 0, len(matrix[0])
+        top, bottom = 0, len(matrix)
 
-        output : List[int] = []
+        output = []
 
-        def helper(row: int, column: int, layer: int):
-            if layer >= row/2 and layer >= column/2:
-                output.append(matrix[row//2][column//2])
-                return
+        while left < right and top < bottom:
+            # top Row
+            for i in range(left, right):
+                output.append(matrix[top][i])
+            top += 1
 
-            if len(output) > row * column:
-                return
+            # right Col
+            for i in range(top, bottom):
+                output.append(matrix[i][right - 1])
+            right -= 1
 
-            for i in range(layer, column - layer - 1):
-                output.append(matrix[layer][i])
+            if not (left < right and top < bottom):
+                return output
+            
+            # bottom Row
+            for i in range(right - 1, left - 1, -1):
+                output.append(matrix[bottom - 1][i])
+            bottom -= 1
 
-            for j in range(layer, row - layer - 1):
-                output.append(matrix[j][column - layer - 1])
+            # left Col
+            for i in range(bottom - 1, top - 1, -1):
+                output.append(matrix[i][left])
+            left += 1
 
-            for h in range(column - layer - 1, layer, -1):
-                output.append(matrix[row - layer - 1][h])
-
-            for k in range(row - layer - 1, layer, -1):
-                output.append(matrix[k][layer])
-
-            if not len(output) == row * column:
-                helper(row, column, layer + 1)
-                
-        helper(len(matrix), len(matrix[0]), 0)
-        while len(output) > len(matrix) * len(matrix[0]):
-            output.pop()
         return output
