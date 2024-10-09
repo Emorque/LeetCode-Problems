@@ -161,3 +161,4 @@
 | 9/18/24 | 66  | Plus One                               | Easy       | [Here](https://leetcode.com/problems/plus-one/description/)                                                    |
 | 9/18/24 | 43  | Multiply Strings                       | Medium     | [Here](https://leetcode.com/problems/multiply-strings/description/)                                            |
 | 9/18/24 | 2013| Detect Squares                         | Medium     | [Here](https://leetcode.com/problems/detect-squares/description/)                                              |
+| 10/8/24 | 88  | Merge Sorted Array                     | Easy       | [Here](https://leetcode.com/problems/merge-sorted-array/description/)                                          |
