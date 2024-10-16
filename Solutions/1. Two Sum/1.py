@@ -2,10 +2,10 @@ from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hashmap = {}
+        differences = {}
+
         for i, num in enumerate(nums):
-            if num not in hashmap:
-                hashmap[target-num] = i
-            else:
-                return [i, hashmap[num]]
-        
+            diff = target - num
+            if diff in differences:
+                return [i, differences[diff]]
+            differences[num] = i

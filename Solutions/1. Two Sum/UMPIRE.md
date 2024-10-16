@@ -1,32 +1,17 @@
-1. Share questions you would ask to help understand the question:
-- Can there be duplicate numbers? 
+1. List out any clarifying questions:
+- So you say "not to use the same element twice", but does that mean I can use the same number twice, if it appears twice?
+- Is the array sorted?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Hash map (Likely)
-- Two pointers (Likely)
+2. List out 1-3 data structures/algorithms that could be useful:
+- Hashmap
 
-3. Write out in plain English what you want to do:
-- A hash map can be created to solve this problem, with the key being the value at a certain index, and then the value being the index 
-- This hashmap will be filled as the nums list is travered:
-    - and, through calculations, if the target is found, return the key index and current index 
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- One brute force way to go about this problem, would be to iterate through the entire nums list for every num, to see if there are any pairs that equal target
+- Since the end goal is to see if I can find a matching difference for each num, what I can do is keep a record of differences that I need with a set and then know that a pair is found when I find that difference in the future
+- Since I do need the indexes, I'll use a hashmap instead of a set, with the difference as the key, and the index as the value
 
-4. Translate each sub-problem into pseudocode:
-- Initialize a map 
-- Iterate through the nums list:
-    - if the num is not in the map, then added it to the map (target-num) with the value as the current index
-    - if it is, then return [key, current index]
+4. Assess the space/time complexity:
+- Space: O(n) since the extra hashmap has keys that grows in relation to the number of unique numbers in the nums list. If one unique number is added, that is one extra key 
+- Time: O(n) since I need to at worst, traverse through all numbers in nums to find a pair. When it comes to looking up and setting keys/values in the hashmap, that is all O(1)
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hashmap = {}
-        for i, num in enumerate(nums):
-            if num not in hashmap:
-                hashmap[target-num] = i
-            else:
-                return [i, hashmap[num]]
-         -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that this is done in O(n) time, and the algorithm ends once the two sum is found
-- One weak area is that it could be more readable 
+5. Optional - Give any ways you would improve your solution:

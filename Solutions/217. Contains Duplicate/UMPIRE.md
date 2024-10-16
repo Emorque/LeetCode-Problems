@@ -1,31 +1,19 @@
-1. Share questions you would ask to help understand the question:
+1. List out any clarifying questions:
+- Is the array sorted?
 
+2. List out 1-3 data structures/algorithms that could be useful:
+- Sets
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Can the nums List be empty?
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- Since were concerned about finding instances of when a values appears twice in the given array, one immediate thought that came to my mind was to use a set
+- A set will be useful since I can quickly lookup if any value is in a given set with "in"
+- I'll initialize a set, and then while iterating through the array, add values to the set if it is not in it, and return True if it is 
+- If I manage to traverse through the whole array without returning True, then I return False. The array only has distinct elements
 
-3. Write out in plain English what you want to do:
-- This problem can be solved through the use of a set. Sets inheritally cannot hold duplicates
-- So, all I have to do is traverse through the nums list, populating a set with numbers. 
-- Then, once a duplicate number is found, return true
-- If I have traversed through the whole nums with no duplicates, return false
+4. Assess the space/time complexity:
+- Space: O(n), and it is from the set. In the case were every element in the array is distinct, then the size of the set grows to be exactly the same length as the array. 
+- Time: O(n), since I would have to traverse through the entire array. Maybe all elements are distinct or there is a duplicate in the last two indexes, I can't end the traversal early
 
-4. Translate each sub-problem into pseudocode:
-- initiaize a set
-- iterate through the nums
-    - if the num is in set, return true
-    - else, add the num to the set
-- return false
-
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        numsSet = set()
-        for num in nums:
-            if num in numsSet: return True
-            else: numsSet.add(num)
-        return False -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that only one traversal is needed and the algorithm ends as soon as the duplicate is found
-- One weak area is that it could be made more readable
+5. Optional - Give any ways you would improve your solution:
+- This is less of an optimization, but more so a what if
+- If the array was sorted, then I could just check if my current num and the one next to it are equal. This would save the need of an additional data strucutre, because in an unsorted array, duplicate nums could be anywhere in the array

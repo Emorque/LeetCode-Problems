@@ -1,50 +1,22 @@
-1. Share questions you would ask to help understand the question:
-- Can another data structure be used?
-- Will there be spaces?
+1. List out any clarifying questions:
+- Are the two strings guarenteed to be the same length?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Hash map (Likely)
-- Sorting (Likely)
+2. List out 1-3 data structures/algorithms that could be useful:
+- Hashmap
 
-3. Write out in plain English what you want to do:
-- For words or phrases to be anagrams, they have to have the same number of character appearances
-- So, for rat and car, r appears once for both, a once for both, but only once for t and c. This is not an anagram
-- A hash map can be used, where the key is the character and the value is the number of appearances, starting at 0
-- The strings will be traversed by the character. For the character in s, the value on the map will be incremented. For the character in t, the value on the map will be decremented
-- Then I just have to iterate through the map, and if a value is found not to be 0, then return false
-- return True 
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- So what determines if two strings are anagrams of each other, is if they share equal character frequencies
+    - if they share the same characters, each of which appear at the same number of times, then they are anagrams
+- A hashmap would work great here
+- I'll interate through both strings, keeping character frequency in a hashmap
+- Actually, I can just have one hashmap for string s, then when iterating through string t, if a character is in the hashmap, then decrement the value by 1, but if that value is 0, then t and s share the same character, but it appears in t more times
+    - And if the character is not in the hashmap, then return False, since there is a character is t not in s, so they can't be anagrams
+- This lookup should be fast since hashing is utilized O(1) lookup
+- Return True if all the values in the hashmap are 0, or actually just return True at the end if they are of equal length
 
-4. Translate each sub-problem into pseudocode:
-- Itialize a map 
-- Iterate through the characters with the length of s
-    - If the current char at s is not in the map, initialize it to in the map with a value of 0
-    - increment the current char by 1
-- Iterate through the characters with the length of t
-    - If the current char at t is not in the map, then the False can be returned early
-    - decrement the current char by 1
-- Iterate through the map
-    - If there is a value that is not 0: return False
-- Return true once out of the traversal 
+4. Assess the space/time complexity:
+- Space: O(n), this is the frequency hashmap that could have n keys (n is the length of s) if ever character is unique
+- Time: O(1 + 1 + n + n) -> O(2n) -> O(n). This 1s come from the len() function, since in the python, this function is run in constant time. The ns comes from the fact, after len() is used and the lengths of both strings are equal, I need to traverse through all characters in both strings, so 2n where n is the number of characters
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        if len(s) != len(t): return False
-        hashmap = {}
-
-        for char in s:
-            if char not in hashmap:
-                hashmap[char] = 0
-            hashmap[char] += 1
-        for char in t:
-            if char not in hashmap:
-                return False
-            hashmap[char] -= 1
-        
-        for value in hashmap.values():
-            if value != 0: return False
-        return True -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that there are two places where the algorithm ends early, when the lengths of the string are not equal, and when a character in t is not in s. Once either happens, then False can be returned early
-- One weak area is that this could be faster if a counter was imported and used
+5. Optional - Give any ways you would improve your solution:
+- If I really wanted to use python optimizations, I could have used the collections library and just compared the Counter() of each string. Counter(s) would return a counter object that contains the character frequencies of s. 
