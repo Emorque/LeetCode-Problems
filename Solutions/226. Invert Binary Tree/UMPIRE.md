@@ -1,30 +1,15 @@
-1. Share questions you would ask to help understand the question:
-- Will there be a case to switch places between an existing node and a non-existing one?
-- Will two nodes that swap every have the same value?
+1. List out any clarifying questions:
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Recursion (Likely)
-- HashMap (Unlikely)
-  
-3. Write out in plain English what you want to do: 
-- So what I can do is, as we traverse through the binary tree, swap the nodes of the left and right children. Keep doing this until the bottom of the tree is reaches (no more children)
+2. List out 1-3 data structures/algorithms that could be useful:
+- Recursion
 
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- Breaking this down in a smaller problem, basically for any node, the right child becomes the left child and vice versa
+- So, what I can do, is recursively call the function on itself for the left and right children. Then set the current node's left child as the right and vice versa. 
+- Finally, I just return the node 
 
-4. Translate each sub-problem into pseudocode:
-- Set up a base case where the node doesn't exist: return
-- Have the left child equal to invertTree(rightChild) and vice versa
-- return the root 
+4. Assess the space/time complexity:
+- Space: O(n), since it corresponds to the recursion stack. In the worst case where each node is on its own level, then there will be O(n) recursive calls. In the case in which each node has both children populated, then the number of calls is halved, so it ends up being O(logn)
+- Time: O(n) since I need to process all n nodes and swap the children for every node
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!--class Solution:
-    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        if not root: 
-            return 
-
-        root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
-
-        return root -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that the algorithm just swaps the child nodes themselves. No extra constraint was needed so no more processing than needed was used
-- It is a relatively simple solution, so one weak area is that if there is a really deep tree as a test case, using an iterative solution with queue could improve efficiency 
+5. Optional - Give any ways you would improve your solution:

@@ -1,50 +1,18 @@
-1. Share 2 questions you would ask to help understand the question:
-- What should be done if the palindrome is only non-alphanumeric characters?
-- Can this be done in O(1) complexity time and space wise?
+1. List out any clarifying questions:
+- Can the given string be of length 1?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Pointers (Likely)
-- Map(Unlikely)
-  
-3. Write out in plain English what you want to do:
-- We're gonna set two pointers at each end of the string
-- We will continually iterate them over the string until they overlap
-- Within that loop, check if they have equal characters
-  - If they don't, even once, return false
-- Once out of the loop, we know its a valid palindrome, so we return true
+2. List out 1-3 data structures/algorithms that could be useful:
+- Two Pointer
 
-4. Translate each sub-problem into pseudocode:
-- As a base case, if the string is len 0 or 1, just return true 
-- What we want to do is set two 'pointers' at each end of the string.
-- We then set a while loop that iterates until the two 'pointers' overlap
-  - Within the loop, we first check if the 'pointers' are pointing to valid characters
-    - if not, then iterate forward (if left pointer) or backward (if right pointer)
-  - If they are valid, then compare them as lower-case characters
-    - If equal, then iterate forward (if left pointer) or backward (if right pointer)
-    - Else, return false
-- Once out of the loop, we know its a valid palindrome, so we return true
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- One way to go about the solution is to see if the reverse of the given string is equal to the given string
+- I think a more efficient solution would to, instead try with two pointers. 
+- I'll have one on each end, and if the letters match, then the read characters so far represent a valid palindrome 
+- I'll keep this this until the two pointers intersect, if they do, that means all corresponding characters match, so it has to be a palindrome
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- def isPalindrome(s: str) -> bool:
-  if len(s) == 0 or len(s) == 1:
-    return True
+4. Assess the space/time complexity:
+- Space: O(1), since I am using a two pointer approach which take up constant space, it results in O(1)
+- Time: O(n), since I need to process each individual character in the given string. So if there are n characters, I need to process all n characters in True test cases. 
 
-  p1 = 0
-  p2 = len(s) - 1
-
-  while (p1 <= p2):
-    while (not (s[p1].isalnum())):
-        if (p1 >= p2):
-            return True
-        p1 += 1
-    while (not (s[p2].isalnum())):
-        p2 -= 1
-    if (s[p1].lower() != s[p2].lower()):
-        return False
-    p1 += 1
-    p2 -= 1
-  return True -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that it is readable and easy to understand the algorithm
-- One weak area is that it could be more optimized with if, elif, else statements
+5. Optional - Give any ways you would improve your solution:
+- If I were not allowed to utilize isalnum() or lower(), I would create two seperate helper functions that would use the ord function to check if the given character is alpha-numeric and set the character to lowercase respectively. 

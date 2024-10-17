@@ -4,14 +4,14 @@
 
 | Date    | #   | Name                                   | Difficulty | Link                                                                                                           |
 | ------- | --- | -------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------- |
-| 6/15/24 | 704 | Binary Search                          | Easy       | [Here](https://leetcode.com/problems/binary-search/description/)                                               |
+| 10/16/24| 704 | Binary Search                          | Easy       | [Here](https://leetcode.com/problems/binary-search/description/)                                               |
 | 6/15/24 | 278 | First Bad Version                      | Easy       | [Here](https://leetcode.com/problems/first-bad-version/description/)                                           |
 | 6/15/24 | 1207| Unique Number of Occurrences           | Easy       | [Here](https://leetcode.com/problems/unique-number-of-occurrences/description/)                                |
-| 6/15/24 | 125 | Valid Palindrome                       | Easy       | [Here](https://leetcode.com/problems/valid-palindrome/description/)                                            |
+| 10/16/24| 125 | Valid Palindrome                       | Easy       | [Here](https://leetcode.com/problems/valid-palindrome/description/)                                            |
 | 6/23/24 | 1700| Number of Students Unable to Eat Lunch | Easy       | [Here](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/description/)                      |
 | 6/23/24 | 215 | Kth Largest Element in an Array        | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)                             |
-| 6/25/24 | 20  | Valid Parentheses                      | Easy       | [Here](https://leetcode.com/problems/valid-parentheses/description/)                                           |
-| 6/25/24 | 703 | Kth Largest Element in a Stream        | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)                             |
+| 10/16/24| 20  | Valid Parentheses                      | Easy       | [Here](https://leetcode.com/problems/valid-parentheses/description/)                                           |
+| 10/16/24| 703 | Kth Largest Element in a Stream        | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)                             |
 | 6/27/24 | 445 | Add Two Numbers II                     | Medium     | [Here](https://leetcode.com/problems/add-two-numbers-ii/description/)                                          |
 | 7/2/24  | 128 | Longest Consecutive Sequence           | Medium     | [Here](https://leetcode.com/problems/longest-consecutive-sequence/description/)                                |
 | 7/3/24  | 155 | Min Stack                              | Medium     | [Here](https://leetcode.com/problems/min-stack/description/)                                                   |
@@ -27,17 +27,17 @@
 | 7/10/24 | 875 | Koko Eating Bananas                    | Medium     | [Here](https://leetcode.com/problems/koko-eating-bananas/description/)                                         |
 | 7/11/24 | 11  | Container With Most Water              | Medium     | [Here](https://leetcode.com/problems/container-with-most-water/description/)                                   |
 | 7/12/24 | 56  | Merge Intervals                        | Medium     | [Here](https://leetcode.com/problems/merge-intervals/description/)                                             |
-| 7/13/24 | 226 | Invert Binary Tree                     | Easy       | [Here](https://leetcode.com/problems/invert-binary-tree/description/)                                          |
-| 7/13/24 | 104 | Maximum Depth of Binary Tree           | Easy       | [Here](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)                                |
+| 10/16/24| 226 | Invert Binary Tree                     | Easy       | [Here](https://leetcode.com/problems/invert-binary-tree/description/)                                          |
+| 10/16/24| 104 | Maximum Depth of Binary Tree           | Easy       | [Here](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)                                |
 | 7/13/24 | 257 | Binary Tree Paths                      | Easy       | [Here](https://leetcode.com/problems/binary-tree-paths/description/)                                           |
-| 7/13/24 | 110 | Balanced Binary Tree                   | Easy       | [Here](https://leetcode.com/problems/balanced-binary-tree/description/)                                        |
+| 10/16/24| 110 | Balanced Binary Tree                   | Easy       | [Here](https://leetcode.com/problems/balanced-binary-tree/description/)                                        |
 | 7/15/24 | 111 | Minimum Depth of Binary Tree           | Easy       | [Here](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/)                                |
 | 7/15/24 | 2196| Create Binary Tree From Descriptions   | Medium     | [Here](https://leetcode.com/problems/create-binary-tree-from-descriptions/description/)                        |
 | 7/16/24 | 94  | Binary Tree Inorder Traversal          | Easy       | [Here](https://leetcode.com/problems/create-binary-tree-from-descriptions/description/)                        |
 | 7/16/24 | 2096| S-by-S Directions From a Binary Tree...| Medium     | [Here](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/description/)  |
 | 7/17/24 | 1110| Delete Nodes And Return Forest         | Medium     | [Here](https://leetcode.com/problems/delete-nodes-and-return-forest/description/)                              |
 | 7/18/24 | 101 | Symmetric Tree                         | Easy       | [Here](https://leetcode.com/problems/symmetric-tree/description/)                                              |
-| 7/18/24 | 543 | Diameter of Binary Tree                | Easy       | [Here](https://leetcode.com/problems/diameter-of-binary-tree/description/)                                     |
+| 10/16/24| 543 | Diameter of Binary Tree                | Easy       | [Here](https://leetcode.com/problems/diameter-of-binary-tree/description/)                                     |
 | 7/18/24 | 1530| Number of Good Leaf Nodes Pairs        | Medium     | [Here](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/)                             |
 | 7/19/24 | 1380| Lucky Numbers in a Matrix              | Easy       | [Here](https://leetcode.com/problems/lucky-numbers-in-a-matrix/description/)                                   |
 | 7/20/24 | 102 | Binary Tree Level Order Traversal      | Medium     | [Here](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)                           |
@@ -59,7 +59,7 @@
 | 8/1/24  | 994 | Rotting Oranges                        | Medium     | [Here](https://leetcode.com/problems/rotting-oranges/description/)                                             |
 | 8/3/24  | 997 | Find the Town Judge                    | Easy       | [Here](https://leetcode.com/problems/find-the-town-judge/description/)                                         |
 | 8/3/24  | 1791| Find Center of Star Graph              | Easy       | [Here](https://leetcode.com/problems/find-center-of-star-graph/description/)                                   |
-| 8/4/24  | 121 | Best Time to Buy and Sell Stock        | Easy       | [Here](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)                             |
+| 10/16/24| 121 | Best Time to Buy and Sell Stock        | Easy       | [Here](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)                             |
 | 8/4/24  | 118 | Pascal's Triangle                      | Easy       | [Here](https://leetcode.com/problems/pascals-triangle/description/)                                            |
 | 8/5/24  | 119 | Pascal's Triangle II                   | Easy       | [Here](https://leetcode.com/problems/pascals-triangle-ii/description/)                                         |
 | 8/6/24  | 1971| Find if Path Exists in Graph           | Easy       | [Here](https://leetcode.com/problems/find-if-path-exists-in-graph/description/)                                |
@@ -89,13 +89,13 @@
 | 8/29/24 | 981 | Time Based Key-Value Store             | Medium     | [Here](https://leetcode.com/problems/time-based-key-value-store/description/)                                  |
 | 8/30/24 | 424 | Longest Repeating Character Replacement| Medium     | [Here](https://leetcode.com/problems/longest-repeating-character-replacement/description/)                     |
 | 9/2/24  | 567 | Permutation in String                  | Medium     | [Here](https://leetcode.com/problems/permutation-in-string/description/)                                       |
-| 9/4/24  | 206 | Reverse Linked List                    | Easy       | [Here](https://leetcode.com/problems/reverse-linked-list/description/)                                         |
+| 10/16/24| 206 | Reverse Linked List                    | Easy       | [Here](https://leetcode.com/problems/reverse-linked-list/description/)                                         |
 | 9/4/24  | 143 | Reorder List                           | Medium     | [Here](https://leetcode.com/problems/reorder-list/description/)                                                |
 | 9/4/24  | 138 | Copy List with Random Pointer          | Medium     | [Here](https://leetcode.com/problems/copy-list-with-random-pointer/description/)                               |
-| 9/4/24  | 141 | Linked List Cycle                      | Easy       | [Here](https://leetcode.com/problems/linked-list-cycle/description/)                                           |
+| 10/16/24| 141 | Linked List Cycle                      | Easy       | [Here](https://leetcode.com/problems/linked-list-cycle/description/)                                           |
 | 9/4/24  | 287 | Find the Duplicate Number              | Medium     | [Here](https://leetcode.com/problems/find-the-duplicate-number/description/)                                   |
 | 9/5/24  | 146 | LRU Cache                              | Medium     | [Here](https://leetcode.com/problems/lru-cache/description/)                                                   |
-| 9/5/24  | 572 | Subtree of Another Tree                | Easy       | [Here](https://leetcode.com/problems/subtree-of-another-tree/description/)                                     |
+| 10/16/24| 572 | Subtree of Another Tree                | Easy       | [Here](https://leetcode.com/problems/subtree-of-another-tree/description/)                                     |
 | 9/5/24  | 235 | LCA of a Binary Search Tree            | Medium     | [Here](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)              |
 | 9/7/24  | 199 | Binary Tree Right Side View            | Medium     | [Here](https://leetcode.com/problems/binary-tree-right-side-view/description/)                                 |    
 | 9/7/24  | 1448| Count Good Nodes in Binary Tree        | Medium     | [Here](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/)                             |
@@ -162,3 +162,9 @@
 | 9/18/24 | 43  | Multiply Strings                       | Medium     | [Here](https://leetcode.com/problems/multiply-strings/description/)                                            |
 | 9/18/24 | 2013| Detect Squares                         | Medium     | [Here](https://leetcode.com/problems/detect-squares/description/)                                              |
 | 10/8/24 | 88  | Merge Sorted Array                     | Easy       | [Here](https://leetcode.com/problems/merge-sorted-array/description/)                                          |
+
+
+| 10/16/24| 21  | Merge Two Sorted Lists                 | Easy       | [Here](https://leetcode.com/problems/merge-two-sorted-lists/description/)                                      |
+| 10/16/24| 100 | Same Tree                              | Easy       | [Here](https://leetcode.com/problems/same-tree/description/)                                                   |
+| 10/16/24| 1046| Last Stone Weight                      | Easy       | [Here](https://leetcode.com/problems/last-stone-weight/description/)                                           |
+| 10/16/24| 1405| Longest Happy String                   | Medium     | [Here](https://leetcode.com/problems/longest-happy-string/description/)                                        |

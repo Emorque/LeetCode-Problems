@@ -1,40 +1,18 @@
-1. Share questions you would ask to help understand the question:
-- Can the LL be empty?
-- Can the LL be a cycle?
+1. List out any clarifying questions:
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Two pointer
 
-3. Write out in plain English what you want to do: 
-- So, to reverse the LL, I need to first consider the strucutre of a LL
-- A LL starts from a head node, and points to a next node, until it reaches the last node, which itself points to a NULL next node
-- So, to reverse, I should start with a NULL node, and then, set it's next node to the head
-- Then, iterating through the LL, take each node and set its next value to the previous node
-- Once a null value is hit, return the curr node
+2. List out 1-3 data structures/algorithms that could be useful:
 
-4. Translate each sub-problem into pseudocode:
-- initialize a None node and set it's next to the head
-- set a traverse Node to the head, this will be what traverses 
-- set a currNode to the None node created at the start
-- while temp != None:
-    - prev = currNode
-    - temp = temp.next
-    - currNode = temp
-    - currNode.next = prev
-- return currNode
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        currNode = None
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- Since this is a single LL, I can only work with .next
+- I'll need to keep track of a prev and curr node, and every time, I need to remember what curr.next's node is before messing with .next values
+- Then I'll set curr to that temp Node, and prev to what curr was before. 
+- set prev to none, save curr.next in memory, set curr.next to prev, and set prev to curr and curr to curr.next that was in memory
+- keep doing this until curr is equal to None, the tail is reached
 
-        while head:
-            prev = currNode
-            currNode = head
-            head = head.next
-            currNode.next = prev
-        return currNode  -->
+4. Assess the space/time complexity:
+- Space: O(1) since all I have created are essentially pointers in memory which take up constant space
+- Time: O(n) since if there are n nodes, I need to process all n of them so that I can reverse the whole LL
 
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that this is an iterative solution, meaning that no memory is used for a recursion stack
-- One weak area is that there is three pointers used, all meant to keep track of nodes, since adjusting .next values would mess with instances of currNode.next, and head.next; which can be hard to follow
+5. Optional - Give any ways you would improve your solution:
