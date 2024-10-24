@@ -1,15 +1,16 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        seen = set()
-
-        while n != 1:
-            if n in seen:
-                return False
-            seen.add(n)
-
+        def getHappy(num: int) -> int:
             happy = 0
-            while n != 0:
-                happy += ((n % 10) ** 2)
-                n = n // 10
-            n = happy
+            while num != 0:
+                happy += ((num % 10) ** 2)
+                num = num // 10
+            return happy
+        
+        slow, fast = n, n
+        while fast != 1:
+            slow = getHappy(slow)
+            fast = getHappy(getHappy(fast))
+            if slow == fast and fast != 1:
+                return False
         return True

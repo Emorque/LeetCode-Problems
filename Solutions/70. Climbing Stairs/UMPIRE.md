@@ -1,35 +1,17 @@
-1. Share questions you would ask to help understand the question:
-- Can we overshoot a step?
-- What are the minimum number of stairs?
+1. List out any clarifying questions:
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
+2. List out 1-3 data structures/algorithms that could be useful:
 - DP
 
-3. Write out in plain English what you want to do: 
-- What I am thinking is using two integers, that represent taking one or two steps. As a base case, they can both be set to one
-- Then n times:
-  - we want to take the sum of both numbers, set it to one, and then set what was one previously to two
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- After drawing staircases with 1-4 steps, it looked like whatever staircase I was looking at, the answer was the sum of the two previous staircases
+- It works for these examples, but I got stumped for a bit figuring out why this works logically so that it can be applied to larger staircases
+- I then realized, that it has to do with the first step that is taken. If I climb one step, then the remaining steps are n-1, and if I climb two steps, then the remaining steps becomes n-2. Since these are my only two possible starting points, summing the answers of n-1 and n-2 would give me all combinations. 
+- So what I'll do is have two ints, since I need to remember my previous two staircases. Any more before that is not neccessary 
+- My base should be 1, as one step can only be climbed one way. I can create a loop that iterates n times, that results in the second int representing the current value of n. 
 
-4. Translate each sub-problem into pseudocode:
-- one, two = 1, 1
-- for i in range(n - 1)
-  - temp = one
-  - one = one += two
-  - two = temp
+4. Assess the space/time complexity:
+- Space: O(1) since I can just using 2 extra int variables
+- Time: O(n) as I need to compute my while loop n times
 
-- return one
-
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def climbStairs(self, n: int) -> int:
-        one, two = 1, 1
-        for i in range(n - 1):
-            temp = one
-            one += two
-            two = temp
-        return one -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that this algorithm does only use ints for space and is done in linear time.
-  - I had previous solutions in my head or doing a recursive call, and then simplied to an array of size n, to then simplifying to this solution
-- One weak area is that since this solution has been simplified as much as possible, I should have added a comment explaining why summing these two ints leads to an answer
+5. Optional - Give any ways you would improve your solution:

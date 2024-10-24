@@ -1,34 +1,23 @@
-1. Share questions you would ask to help understand the question:
+1. List out any clarifying questions:
 
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
+2. List out 1-3 data structures/algorithms that could be useful:
+- Set
+- Two pointer
 
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- The two big things are what determines a happy number and making sure that catch that I am in a loop
+- In terms of how a happy number, I think a mixture of // 10 and %10 to grab individual digits should be enough
+- However, in terms of catching that I am in a loop, that's important as if I don't have a catch, then my program will just compute forever if there is a cycle
+- Just isolating cycle detection, I know I can use two pointers if the problem were a LL problem. I think the logic should apply here.
+- I'll create a helper function that calcualtes the happy number of a given number, and have two pointers that start at n
+    - Then, while fast doesn't equal 1, I'll call the helper on fast twice, and slow once
+- If I exist the loop, then that means no loop exists and I can return True
+- If slow and fast ever equal each other, than that means that there is cycle
 
-3. Write out in plain English what you want to do: 
-- Use a set to keep track of seen numbers
-- If a number is already in the set, then I know that I have entered into a cycle, so I can return False
-- Else if this never happens, return True evantually when the number equals 1
+4. Assess the space/time complexity:
+- Space: O(1), since all that is being done is math on int variables, with no recursive stack or extra data structure used
+- Time: O(n) in the case the n is the number of getHappy calls that results from n. Since this time grows linearly with the given n, time is O(n). 
+- ** Asking GPT, says that time is O(logn) because: "In each call to getHappy, the number n is broken down digit by digit, which takes O(d), where d is the number of digits in n. The number of digits in n is approximately O(log n) (in base 10). So each call to getHappy takes O(log n) time."
 
-4. Translate each sub-problem into pseudocode:
-
-
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def isHappy(self, n: int) -> bool:
-        seen = set()
-
-        while n != 1:
-            if n in seen:
-                return False
-            seen.add(n)
-
-            happy = 0
-            while n != 0:
-                happy += ((n % 10) ** 2)
-                n = n // 10
-            n = happy
-        return True -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that this solution uses a set to track already seen numbers so that an endless loop isnt entered
-- One weak area is that this can be simplified by converting n to a string and getting digits that way instead of using % 
+5. Optional - Give any ways you would improve your solution:

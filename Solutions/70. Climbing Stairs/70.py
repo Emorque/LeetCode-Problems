@@ -1,8 +1,10 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
-        one, two = 1, 1
+        case1 = 1
+        case2 = 1
+
         for i in range(n - 1):
-            temp = one
-            one += two
-            two = temp
-        return one
+            total = case1 + case2
+            case1 = case2
+            case2 = total
+        return case2

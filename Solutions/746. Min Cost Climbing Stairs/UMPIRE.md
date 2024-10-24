@@ -1,29 +1,17 @@
-1. Share questions you would ask to help understand the question:
-- Can any costs be negative or 0?
-- Are we guarenteed at least two steps?
-- Can the last step we take be the last two numbers in the list?
+1. List out any clarifying questions:
+- Can the cost list be a length less than 2?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
+2. List out 1-3 data structures/algorithms that could be useful:
 - DP
 
-3. Write out in plain English what you want to do: 
-- After going through an example logic, I realized that to reach a step, the ideal choice to get go from the step that costs the least (from the choice of two prev steps):
-    - [1,2,3]
-    - If I want to reach 3 in the least cost and my options are index 0, and 1. I would want to go with the step that costs the least (index 0)
-- since we start from either index 0 or 1, we can iterate from index 2 to the end and just perform this logic. 
-- the last index should be the path of the lowest cost
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- The imporant thing is that I need to know the min cost of reaching to the top. 
+- A way to break this up into a smaller problem, is to then calcualte what the min cost is to reach each step.
+- Since I can climb either 1 or 2 steps, the min cost of each step should be the cost of itself and the min of the 2 previous steps. I would only want to take the min as in the end, I need to work my way up the staircase to reach the top and return the min cost
+- Starting from index 2, I'll do just this logic, then at the end, return the min cost of the last 2 steps, since I can reach the top from cost[-2] and cost[-1]
 
-4. Translate each sub-problem into pseudocode:
-- for i in range(2, len(cost)):
-    - cost[i] += min(cost[i - 1], cost[i - 2])
-- return cost[-1]
+4. Assess the space/time complexity:
+- Space: O(1) since I even thought I am not creating anything extra, something like min will use temp variables to compute
+- Time: O(n) as I need to process every step in the given cost list of n steps
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def minCostClimbingStairs(self, cost: List[int]) -> int:
-        for i in range(2, len(cost)):
-            cost[i] += min(cost[i - 1], cost[i - 2])
-        return min(cost[-1], cost[-2]) -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that this algorithm does work inplace and builds on top of previous work
+5. Optional - Give any ways you would improve your solution:

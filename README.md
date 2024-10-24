@@ -9,7 +9,7 @@
 | 6/15/24 | 1207| Unique Number of Occurrences           | Easy       | [Here](https://leetcode.com/problems/unique-number-of-occurrences/description/)                                |
 | 10/16/24| 125 | Valid Palindrome                       | Easy       | [Here](https://leetcode.com/problems/valid-palindrome/description/)                                            |
 | 6/23/24 | 1700| Number of Students Unable to Eat Lunch | Easy       | [Here](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/description/)                      |
-| 6/23/24 | 215 | Kth Largest Element in an Array        | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)                             |
+| 10/23/24| 215 | Kth Largest Element in an Array        | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)                             |
 | 10/16/24| 20  | Valid Parentheses                      | Easy       | [Here](https://leetcode.com/problems/valid-parentheses/description/)                                           |
 | 10/16/24| 703 | Kth Largest Element in a Stream        | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)                             |
 | 6/27/24 | 445 | Add Two Numbers II                     | Medium     | [Here](https://leetcode.com/problems/add-two-numbers-ii/description/)                                          |
@@ -48,7 +48,7 @@
 | 7/22/24 | 236 | Lowest Common Ancestor of a Binary Tree| Medium     | [Here](https://leetcode.com/problems/distribute-coins-in-binary-tree/description/)                             |
 | 7/25/24 | 98  | Validate Binary Search Tree            | Medium     | [Here](https://leetcode.com/problems/validate-binary-search-tree/description/)                                 |
 | 7/28/24 | 509 | Fibonacci Number                       | Easy       | [Here](https://leetcode.com/problems/fibonacci-number/description/)                                            |
-| 7/28/24 | 746 | Min Cost Climbing Stairs               | Easy       | [Here](https://leetcode.com/problems/min-cost-climbing-stairs/description/)                                    |
+| 10/23/24| 746 | Min Cost Climbing Stairs               | Easy       | [Here](https://leetcode.com/problems/min-cost-climbing-stairs/description/)                                    |
 | 7/28/24 | 832 | Flipping an Image                      | Easy       | [Here](https://leetcode.com/problems/flipping-an-image/description/)                                           |
 | 7/28/24 | 867 | Transpose Matrix                       | Easy       | [Here](https://leetcode.com/problems/transpose-matrix/description/)                                            |
 | 7/28/24 | 200 | Number of Islands                      | Medium     | [Here](https://leetcode.com/problems/number-of-islands/description/)                                           |
@@ -128,7 +128,7 @@
 | 9/13/24 | 207 | Course Schedule                        | Medium     | [Here](https://leetcode.com/problems/course-schedule/description/)                                             |
 | 9/13/24 | 210 | Course Schedule II                     | Medium     | [Here](https://leetcode.com/problems/course-schedule-ii/description/)                                          |
 | 9/13/24 | 684 | Redundant Connection                   | Medium     | [Here](https://leetcode.com/problems/redundant-connection/description/)                                        |
-| 9/15/24 | 70  | Climbing Stairs                        | Easy       | [Here](https://leetcode.com/problems/climbing-stairs/description/)                                             |
+| 10/23/24| 70  | Climbing Stairs                        | Easy       | [Here](https://leetcode.com/problems/climbing-stairs/description/)                                             |
 | 9/15/24 | 198 | House Robber                           | Medium     | [Here](https://leetcode.com/problems/house-robber/description/)                                                |
 | 9/15/24 | 213 | House Robber II                        | Medium     | [Here](https://leetcode.com/problems/house-robber-ii/description/)                                             |
 | 9/15/24 | 5   | Longest Palindromic Substring          | Medium     | [Here](https://leetcode.com/problems/longest-palindromic-substring/description/)                               |
@@ -148,23 +148,20 @@
 | 9/16/24 | 72  | Edit Distance                          | Medium     | [Here](https://leetcode.com/problems/edit-distance/description/)                                               |
 | 9/17/24 | 1584| Min Cost to Connect All Points         | Medium     | [Here](https://leetcode.com/problems/min-cost-to-connect-all-points/description/)                              |
 | 9/17/24 | 743 | Network Delay Time                     | Medium     | [Here](https://leetcode.com/problems/network-delay-time/description/)                                          |
-| 9/17/24 | 136 | Single Number                          | Easy       | [Here](https://leetcode.com/problems/single-number/description/)                                               |
-| 9/17/24 | 191 | Number of 1 Bits                       | Easy       | [Here](https://leetcode.com/problems/number-of-1-bits/description/)                                            |
-| 9/17/24 | 338 | Counting Bits                          | Easy       | [Here](https://leetcode.com/problems/counting-bits/description/)                                               |
-| 9/17/24 | 190 | Reverse Bits                           | Easy       | [Here](https://leetcode.com/problems/reverse-bits/description/)                                                |
-| 9/17/24 | 268 | Missing Number                         | Easy       | [Here](https://leetcode.com/problems/missing-number/description/)                                              |
+| 10/23/24| 136 | Single Number                          | Easy       | [Here](https://leetcode.com/problems/single-number/description/)                                               |
+| 10/23/24| 191 | Number of 1 Bits                       | Easy       | [Here](https://leetcode.com/problems/number-of-1-bits/description/)                                            |
+| 10/23/24| 338 | Counting Bits                          | Easy       | [Here](https://leetcode.com/problems/counting-bits/description/)                                               |
+| 10/23/24| 190 | Reverse Bits                           | Easy       | [Here](https://leetcode.com/problems/reverse-bits/description/)                                                |
+| 10/23/24| 268 | Missing Number                         | Easy       | [Here](https://leetcode.com/problems/missing-number/description/)                                              |
 | 9/17/24 | 371 | Sum of Two Integers                    | Medium     | [Here](https://leetcode.com/problems/sum-of-two-integers/description/)                                         |
 | 9/17/24 | 7   | Reverse Integer                        | Medium     | [Here](https://leetcode.com/problems/reverse-integer/description/)                                             |
 | 9/18/24 | 787 | Cheapest Flights Within K Stops        | Medium     | [Here](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)                             |
 | 9/18/24 | 73  | Set Matrix Zeroes                      | Medium     | [Here](https://leetcode.com/problems/set-matrix-zeroes/description/)                                           |
-| 9/18/24 | 202 | Happy Number                           | Easy       | [Here](https://leetcode.com/problems/happy-number/description/)                                                |
-| 9/18/24 | 66  | Plus One                               | Easy       | [Here](https://leetcode.com/problems/plus-one/description/)                                                    |
+| 10/23/24| 202 | Happy Number                           | Easy       | [Here](https://leetcode.com/problems/happy-number/description/)                                                |
+| 10/23/24| 66  | Plus One                               | Easy       | [Here](https://leetcode.com/problems/plus-one/description/)                                                    |
 | 9/18/24 | 43  | Multiply Strings                       | Medium     | [Here](https://leetcode.com/problems/multiply-strings/description/)                                            |
 | 9/18/24 | 2013| Detect Squares                         | Medium     | [Here](https://leetcode.com/problems/detect-squares/description/)                                              |
 | 10/8/24 | 88  | Merge Sorted Array                     | Easy       | [Here](https://leetcode.com/problems/merge-sorted-array/description/)                                          |
-
-
 | 10/16/24| 21  | Merge Two Sorted Lists                 | Easy       | [Here](https://leetcode.com/problems/merge-two-sorted-lists/description/)                                      |
 | 10/16/24| 100 | Same Tree                              | Easy       | [Here](https://leetcode.com/problems/same-tree/description/)                                                   |
 | 10/16/24| 1046| Last Stone Weight                      | Easy       | [Here](https://leetcode.com/problems/last-stone-weight/description/)                                           |
-| 10/16/24| 1405| Longest Happy String                   | Medium     | [Here](https://leetcode.com/problems/longest-happy-string/description/)                                        |

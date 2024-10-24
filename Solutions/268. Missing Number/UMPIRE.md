@@ -1,49 +1,18 @@
-1. Share questions you would ask to help understand the question:
-- What is the expected range of length of nums:
-- Is the nums array sorted?
+1. List out any clarifying questions:
+- Any chance the nums list is sorted?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Sorting (Likely)
-- Hashmap (Likely) / Second list
-- Math (Likely)
+2. List out 1-3 data structures/algorithms that could be useful:
+- Set
 
-3. Write out in plain English what you want to do: 
-- There are three solutions that I came up with that each have their own unqiue constraints:
-  - Sorting -> Requires O(nlogn) time to sort and would require n time to traverse through nums 
-  - Hashmap -> Requires O(n) space, and would have to pass nums once and the hashmap once (2n) time
-  - Math -> I know there is some math problem that gives the expression: n + n - 1 + n - 2... 0, but I dont know it by heart. If I were to use this, then I just compare the sum of nums to what my sum would be with that expression. The difference between the two is the missing number
-    - The problem is that if n is large, like 10000, then the expression returns 10000 + 9999 + 9998...0 which may produce an overflow
-  - So instead of using that formula to get the sum right away:
-    - I know that the sum of nums and the sum of n has a difference of the missing number
-  - So, what I can do is iterate through nums, subtracting the current num from my output, and then adding the current index
-    - What this does, is bascially subtract the sum of nums one at a time, and add the sum of n one at a time
-      - No overflow will happen, and the resulting int will be the difference between the two, since just one number differs between the two
-  - Basically, for [1,2]:
-    - I would:
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- One brute force one I can think of, is taking the nums list and converting it to a set. Then, going from 0 to n, I can do someting like (i in nums) to see if a number is in the set. Lookup will be O(n) for checking all n numbers (O(1) individually) but the conversion will be O(n). The number that is not in nums is the missing number
+- If I want to be a bit more efficient, something I can do to remove the need of extra data space, is to use bitwise
+- I know that xor is a great way of determing what number appears twice in a list. If I use xor on the same number, the result is 0. But if I use xor on two different numbers, the result is non-zero. 
+- Since I know that answer should be within the range of [0,n], just that it is missing from the list, I can iterate through the list, and then use xor in the current num and use an iterator i
+- There should only be one number in the iterator that is not in num, and in the end, it should be what is left 
 
-4. Translate each sub-problem into pseudocode:
-  - missing = 0
-  - for i in range(len(nums)):
-    - missing += i
-    - missing -= nums[i]
-  - returning missing + i + 1
+4. Assess the space/time complexity:
+- Space: O(1) since I am just using constant space variables
+- Time: O(n) as, for every number in nums, I need to process it
 
-  - 0 + 0 - 1 = -1
-  - -1 + 1 - 2 = -2
-
-  - -2 + 1 + 1 = 0
-
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def missingNumber(self, nums: List[int]) -> int:
-        missing = 0
-
-        for i in range(len(nums)):
-            missing += i
-            missing -= nums[i]
-        
-        return missing + i + 1 -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that instead of using a formula to getting one potentially breking sum, I am adding and subtracting parts of the two sums, one small integer at a time
-- One weak area is that it may not be clear why that return is like that 
+5. Optional - Give any ways you would improve your solution:
