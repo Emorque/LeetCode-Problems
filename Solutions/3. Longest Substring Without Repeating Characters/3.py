@@ -1,16 +1,19 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        hashmap = {}
-        left = 0
-        output = 0
-    
-        for i in range(len(s)):
-            if s[i] not in hashmap:
-                hashmap[s[i]] = 0
-            else:
-                while s[left] != s[i]:
-                    del hashmap[s[left]]
+        longest = 0
+        left, right = 0, 0
+
+        seen = set()
+
+        while right < len(s):
+            char = s[right]
+
+            if char in seen:
+                longest = max(longest, right - left)
+                while char in seen:
+                    seen.remove(s[left])
                     left += 1
-                left += 1
-            output = max(output, i - left + 1)
-        return output
+            seen.add(char)
+            right += 1
+        
+        return max(longest, right - left)

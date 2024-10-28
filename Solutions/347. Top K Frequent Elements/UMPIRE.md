@@ -1,45 +1,17 @@
-1. Share questions you would ask to help understand the question:
-- Can k be greater than the number of unique numbers?
-- Can some numbers appear the same number of times?
+1. List out any clarifying questions:
+- Can k's value be more than the number of unique elements that I have?
+- If k is 1 but I have two characters with equal top frequencies, is returning either a valid answer?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Hash map (Likely)
-- 
+2. List out 1-3 data structures/algorithms that could be useful:
+- Hashmap
 
-3. Write out in plain English what you want to do:
-- Breaking this down into smaller problems:
-  - First, I  need to track the number of occurances for each number
-  - Second, I need to extract only the kth most occurances 
-    - Append those numbers to a list and return that list at the end 
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- When I see the word "frequent", my mind immediately turns to hashmaps as it is a very useful structure for recording frequencies 
+- Then what I can is create a list of length n, as if there are n numbers, then the most frequent a number can be is n. I'll iterate through the hashmap where the key will be inserted in the list at index: value
+- Then I just iterate from right to left in my list as I want the k most frequent, and populate an output list with the most frequenct characters until it has a length k
 
-4. Translate each sub-problem into pseudocode:
-- Initialize a hash map to hold the number and its number of occurances
-- Iterate through the given nums list, incrementing the count for each number as it is seen
-- Iterate through the now filled hash map, populating a heap with the values and keys
-- Itereate through the heap, by popping off the kth elements at the top, and appending them to an output list
-- Retutn the output list  
+4. Assess the space/time complexity:
+- Space: O(n + k + n) -> O(n). The first n comes from the hashmap as in the worst case, there can be n number of keys where n is the length of nums. k comes from the length of the output list. The second n comes from the frequency list which is n + 1 length
+- Time: O(n + n + k) -> O(n). Similar reasoning as space. First n is from itearting through every number to get frequency count. Second n comes from getting all the values which at worst, could be n values. k comes from itearting through the freqlist k times
 
-
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        hashmap = {}
-        occurances = []
-        for num in nums:
-            if num not in hashmap:
-                hashmap[num] = 0
-            hashmap[num] += 1
-
-        for key, v in hashmap.items():
-            occurances.append((-v,key))
-        heapq.heapify(occurances)
-        output = []
-        while k != 0:
-            output.append(heapq.heappop(occurances)[1])
-            k-= 1
-        return output
-         -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that this solution utilizes the advantages of a heap to give the occurances in decending order
-- One weak area is there are three data structures used and it is a bit difficult to follow along
+5. Optional - Give any ways you would improve your solution:

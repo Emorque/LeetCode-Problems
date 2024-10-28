@@ -1,33 +1,33 @@
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-        left = 0
-        traversing = False
-        hashmap = {}
-        s1Length = len(s1)
+        s1_len = len(s1)
+        freq = {}
 
         for char in s1:
-            hashmap[char] = 1 + hashmap.get(char, 0)
-            
-        for i, char in enumerate(s2):
-            if traversing:
-                if char in hashmap and hashmap[char] == 1 and (i - left + 1) == s1Length:
+            freq[char] = freq.get(char, 0) + 1
+        
+        left = 0
+        constructing = False
+        for right, char in enumerate(s2):
+            if constructing:
+                if char in freq and freq[char] == 1 and (right - left + 1) == s1_len:
                     return True
-                if char not in hashmap:
-                    while left != i:
-                        hashmap[s2[left]] += 1
+                if char not in freq:
+                    while left < right:
+                        freq[s2[left]] += 1
                         left += 1
-                    traversing = False
-                elif hashmap[char] == 0:
+                    constructing = False
+                elif freq[char] == 0:
                     while s2[left] != char:
-                        hashmap[s2[left]] += 1
+                        freq[s2[left]] += 1
                         left += 1
                     left += 1
                 else:
-                    hashmap[char] -= 1
-            elif char in hashmap:
-                left = i 
-                hashmap[char] -= 1
-                traversing = True
-                if (i - left + 1) == s1Length:
-                    return True
+                    freq[char] -= 1
+            elif char in freq:
+                    freq[char] -= 1
+                    constructing = True
+                    left = right
+                    if (right - left + 1) == s1_len:
+                        return True
         return False

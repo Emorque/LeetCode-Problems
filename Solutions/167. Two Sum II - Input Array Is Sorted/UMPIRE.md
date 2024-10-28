@@ -1,40 +1,24 @@
-1. Share questions you would ask to help understand the question:
-- Can there be negative numbers in the array?
+1. List out any clarifying questions:
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Hash map (Neutral)
-- Two pointers (Likely)
 
-3. Write out in plain English what you want to do: 
-- If the array was not sorted, then a hashmap could be used during traversal to find the answer
-- However, since the array is sorted, and I'm limited to constant space, two pointers can be used
-- Have one pointer at the start and one at the end. Add the values the two pointers point to, and if they equal the target, return it
-    - If the sum is greater, then we need to take away; and since this array is in ascending order, moving the right pointer left will do this
-    - If the sum is less, then the same logic applies, we need more and going to the right with the left pointer does this
-    - Sort of like a tightrope, depending on the sum, we evenly distribute the weight by taking away/adding balance (in this case, int values)
-- Keep that loop going, since there is always a solution
+2. List out 1-3 data structures/algorithms that could be useful:
+- 2 pointer
 
-4. Translate each sub-problem into pseudocode:
-- Initialzie two pointers, one at the start and one at the end
-- Create a while loop that iterates until the two connect, 
-    - if the sum of the values are equal to the target, return the indexes
-    - if the sum is less than the target, increment the left pointer
-    - else: decrement the right pointer 
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- There are actually two things that are pretty key to note
+    - The array is sorted in ascending order
+    - The solution I provide has to use extra constant space
+- The brute force way, is to start from each number, and then check every possible pairing to see if they can sum to target
+    - If I get a pairing whose sum is greater than target, I can just stopping seaching with the starting number, since numbers further to the right are greater
+- With that kind of logic, I don't need to check every possible pair
+- What I can do is instead have the greatest possible sum from a pair and then slowly decrease the sum untill I reach the target
+- Since the array is sorted, I can always get the greatest possible sum by using the first and last number
+- Maybe greatest isn't the right word, I would say the one that can most easily grow or shrink
+- If I need to grow my sum, I can just move my left number by 1
+- If I need to decrease my sum, I can just move my right number by 1
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        p1, p2 = 0, len(numbers) - 1
+4. Assess the space/time complexity:
+- Space: O(1), since I am only using int variables as pointers of the numbers list
+- Time: O(n), since in the worst case scenerio where the two numbers I need are directly in the middle, I would have to process all n numbers
 
-        while p1 < p2:
-            currSum = numbers[p1] + numbers[p2]
-            if currSum == target:
-                return [p1 + 1, p2 + 1]
-            elif currSum < target:
-                p1 += 1
-            else: 
-                p2 -= 1 -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area with this algorithm is that it uses constant extra space, with only 3 int variables
-- One weak area is that it could be made more clear the reasoning why this logic was followed, through the use of comments
+5. Optional - Give any ways you would improve your solution:

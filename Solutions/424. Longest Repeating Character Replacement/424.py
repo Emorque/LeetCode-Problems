@@ -1,14 +1,19 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        hashmap = {}
-        left = 0
-        output = 0
+        longest = 0
+        left, right = 0,0
+        freq = {}
 
-        for i in range(len(s)):
-            hashmap[s[i]] = 1 + hashmap.get(s[i], 0)
-            if (i - left + 1) - max(hashmap.values()) > k:
-                hashmap[s[left]] -= 1
+        maxFreq = 0
+
+        while right < len(s):
+            freq[s[right]] = 1 + freq.get(s[right], 0)
+            if freq[s[right]] > maxFreq:
+                maxFreq = freq[s[right]]
+            if (right - left + 1) > maxFreq + k:
+                # no longer valid
+                freq[s[left]] -= 1
                 left += 1
-            output = max(output, i - left + 1)
-        return output
-
+            longest = max(longest, right - left + 1)
+            right += 1
+        return max(right - left, longest)

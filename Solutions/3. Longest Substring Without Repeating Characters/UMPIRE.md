@@ -1,46 +1,18 @@
-1. Share questions you would ask to help understand the question:
-- Can these be a s with have a length of 0?
+1. List out any clarifying questions:
+- Are characters that are the same but different casing considered repeating?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Two pointer (Likely)
-- Hash map (Likely)
+2. List out 1-3 data structures/algorithms that could be useful:
+- Sliding window
 
-3. Write out in plain English what you want to do: 
-- What I am thinking, is to use a hash map to store the current characters in the substring
-- I will use two pointers, one starting at the left, and one that traverses to the right
-- While traversing through the s string, if a character is ecountered that is in the map, the left pointer will go to the right until the repeated characer is found 
-- At each step, calculate the distance between the left and right pointers to get the length of the substring 
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- The brute force approach would be to check every single substring
+- However, there is a simplier approach that is more time efficient. 
+- If I just iterate from left to right, keeping track of the characters I've seen in a set, I can easily detect whenever I come accross a duplicate
+- Then, I can just move my left pointer till I remove the duplicate
+- Every time this happens, I'll be sure to record the max length
 
-4. Translate each sub-problem into pseudocode:
-- Initialize a hash map, a left pointer, and an output int variable 
-- Create a loop to iterate through the s string: 
-  - if char is not in the hashmap
-    - initialize it to the hashmap with the value: 0
-  - if char is in the hashmap:
-    - while the left pointer doesn't point to the character the right point is at:
-      - delete the key of the character pointed by left from the hashmap
-      - left ++ 
-    - left++
-  - set output to max(output, right - left + 1) (*0 index)
+4. Assess the space/time complexity:
+- Space: O(n) since there could be case where the entire string doesn't have duplicates, so the seen set would contain all n characters
+- Time: O(n) since I have to process and check every character in the string 
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        hashmap = {}
-        left = 0
-        output = 0
-    
-        for i in range(len(s)):
-            if s[i] not in hashmap:
-                hashmap[s[i]] = 0
-            else:
-                while s[left] != s[i]:
-                    del hashmap[s[left]]
-                    left += 1
-                left += 1
-            output = max(output, i - left + 1)
-        return output -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that this algorithm uses a two pointer, sliding window solution to have an efficient solution with O(n) space 
-- One weak area is that a there could be a better way to rework the del hashmap[s[left]] line. This line bascially ensures that the characters that are skipped for while the left pointer don't get counted in the substring as right progresses
+5. Optional - Give any ways you would improve your solution:

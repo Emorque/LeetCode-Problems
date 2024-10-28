@@ -1,42 +1,20 @@
-1. Share questions you would ask to help understand the question:
-- Can there be a test case where we have two really tall lines, followed by a ton of smaller lines that result in an higher output?
+1. List out any clarifying questions:
+- Could a height be negative?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Two pointer (Likely)
-- Sliding Window (Neutral)
-  
-3. Write out in plain English what you want to do: 
-- Something we can do is set two pointers, one at each end of the array. 
-- Then we calculuate the area between the two pointers and set it to the result if it is greater than the current max.
-- Then depending on which pointer is lower, adjust the placement of the pointers 
-- Just do this until the pointers intersect and return the result 
+2. List out 1-3 data structures/algorithms that could be useful:
+- Two pointer
 
-4. Translate each sub-problem into pseudocode:
-- Set two pointers, the left one at 0 and the right one at len(height) - 1
-- Set an int variable: result to 0 
-- while the left pointer is less than the right:
-    - calculate the distance between them and multiply it by the shorter height of the two. This is area
-    - set result to max(result, area)
-    - whichever pointer points to the shorter height, have it move once 
-- return the result 
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- The overall problem is to figure out the container that contains the most amount of water
+- To first find the max, I need to calculate the amount of water a container can hold
+- I would take two heights, calculate their distance as the width, and then multiply that by the lowest height
+- The product would be my area
+- Instead of checking every potential container size and position, I could just start from both ends of the List
+- Then, I just always go to the move the end with the current smallest height
+- This way, I am checking only containers that have the potential to be greater, and not every single one
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def maxArea(self, height: List[int]) -> int:
-        left, right = 0, len(height) - 1
-        result = 0
+4. Assess the space/time complexity:
+- Space: O(1) since I am using constant extra space
+- Time: O(n) since I would have to check all of n heights at least once
 
-        while left < right:
-            width = right - left
-            if height[left] < height[right]:
-                area = width * height[left]
-                left += 1
-            else:
-                area = width * height[right]
-                right -= 1
-            result = max(result, area)
-        return result -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that there is no need for multiple passes, we just shrink the area as we calculate the areas
-- One weak area is that there is greater potential for it to be much faster. There are some creative solutions that use open()
+5. Optional - Give any ways you would improve your solution:

@@ -2,19 +2,14 @@ from typing import List
 
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        if not nums:
-            return 0
+        numbers = set(nums)
+        longest = 0
 
-        nums.sort()
-
-        longest_sequence : int = 1
-        curr_sequence : int = 1
-
-        for i in range(len(nums)-1):
-            if nums[i] == nums[i+1] : continue
-            if nums[i] + 1 == nums[i+1]:
-                curr_sequence += 1
-            else:
-                longest_sequence = max(longest_sequence, curr_sequence)
-                curr_sequence = 1
-        return max(curr_sequence, longest_sequence)
+        for num in numbers:
+            if num - 1 in numbers:
+                continue
+            length = 0
+            while num + length in numbers:
+                length += 1
+            longest = max(longest, length)
+        return longest
