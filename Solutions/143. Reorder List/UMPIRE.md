@@ -1,79 +1,18 @@
-1. Share questions you would ask to help understand the question:
-- Should a LL of one and 2 nodes be returned as the same?
+1. List out any clarifying questions:
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Two pointer
 
-3. Write out in plain English what you want to do: 
-- There is an added constraint in that "You may not modify the values in the list's nodes. Only nodes themselves may be changed."
-- This means that the next values will need to be adjusted for the relevant nodes
-Drawing out the second example, we seem to end once the middle node's next value is none 
-  - To get the middle node, a fast pointer (.next.next) and a slow pointer (.next) can be used
-  - For odd length LLs, this is middle is found
-  - For even length LLs, need to push the slow pointer once more
-- set a while loop that iterates so long as middle's next node is not null
-  - have a pointer that starts at the head, and then keep track of the that head's next, and the tail. Reorder by setting new next nodes 
+2. List out 1-3 data structures/algorithms that could be useful:
+- Stack
 
-4. Translate each sub-problem into pseudocode:
-- Initialize a slow and fast pointer and tempHead to head
-- 
-- while (fast.next.next):
-  - slow = slow.next
-  - fast = fast.next.next
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- A way that helped me visualize this, was as a spiral, where I slowly go towards the middle, as I go from L0, to Ln, to L1, to Ln-1... 
+- That also means that the middle node will always end up at the tail node in the result LL
+- I can use slow,fast pointers to get the middle
+- Since this is not a DLL, I need a way to track inorder my nodes from middle to tail
+- A way I can have a record of these nodes is to use a stack and store the nodes there
 
-- if fast.next:
-  - fast= fast.next
-  - slow = slow.next
+4. Assess the space/time complexity:
+- Space: O(n/2) -> O(n) as only half of the nodes are in the stack at most. In the end, the stack has 0 elements in it
+- Time: O(n) as all the nodes are traversed, with 3 passes
 
-- while slow.next:
-  - tail = slow
-  - while tail.next.next:
-    - tail = tail.next
-  - newNext = tail
-  - newNext = newNext.next
-  - oldNext = tempHead.next
-  - tempHead.next = newNext
-  - newNext.next = oldNext
-  - tail.next = None
-  - tempHead = tempHead.next
-
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def reorderList(self, head: Optional[ListNode]) -> None:
-        """
-        Do not return anything, modify head in-place instead.
-        """
-        slow, fast, tempHead = head, head, head
-        
-        while fast.next:
-            slow = slow.next
-            fast = fast.next.next
-            if not fast:
-                break
-
-        stack = []
-        stackLength = len(stack)
-        tails = slow
-        while tails:
-            stack.append(tails)
-            tails = tails.next
-
-        while slow.next:
-            # tail = slow
-            # while tail.next.next:
-            #     tail = tail.next
-            newNext = stack.pop()
-            tail = stack.pop()
-
-            oldNext = tempHead.next
-            tempHead.next = newNext
-            newNext.next = oldNext
-            tail.next = None
-            
-            stack.append(tail)
-            tempHead = tempHead.next.next
-  -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that this algorithm utilizies a stack to keep track of what tails are, my previous solution did not use this. So, when it came to finding the new tail for that instance, a pointer would have to traverse from the slow pointer to the end; which for large LLs, can take a long time
-- One weak area is the readability, especially since I am popping twice from the stack and then appending again, it may be hard to follow 
+5. Optional - Give any ways you would improve your solution:

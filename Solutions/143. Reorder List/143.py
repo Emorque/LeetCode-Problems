@@ -11,32 +11,27 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
-        slow, fast, tempHead = head, head, head
-        
-        while fast.next:
-            slow = slow.next
+        mid, fast = head, head
+        while fast and fast.next:
+            mid = mid.next
             fast = fast.next.next
-            if not fast:
-                break
+        
+        #stack
+        tails = []
+        tail = mid
+        while tail:
+            tails.append(tail)
+            tail = tail.next
 
-        stack = []
-        stackLength = len(stack)
-        tails = slow
-        while tails:
-            stack.append(tails)
-            tails = tails.next
+        tempHead = head
+        while mid.next and tails:
+            tail = tails.pop()
+            tailNext = tempHead.next
 
-        while slow.next:
-            # tail = slow
-            # while tail.next.next:
-            #     tail = tail.next
-            newNext = stack.pop()
-            tail = stack.pop()
+            tempHead.next = tail
+            tail.next = tailNext
 
-            oldNext = tempHead.next
-            tempHead.next = newNext
-            newNext.next = oldNext
-            tail.next = None
-            
-            stack.append(tail)
-            tempHead = tempHead.next.next
+            tempHead = tailNext
+            tails[-1].next = None
+
+        return head

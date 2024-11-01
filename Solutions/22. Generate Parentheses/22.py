@@ -2,18 +2,14 @@ from typing import List
 
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        output = []
-
-        def helper(open: int, close: int, currStr: str):
-            if open == n and close == n:
-                output.append(currStr)
+        combinations = []
+        def backtrack(combination, opening, closing):
+            if closing == n:
+                combinations.append(combination)
                 return
-            if open == n:
-                helper(open, close + 1, currStr+')')
-            elif open <= close:
-                helper(open + 1, close, currStr+'(')
-            else:
-                helper(open + 1, close, currStr + '(')
-                helper(open, close + 1, currStr + ')')
-        helper(0, 0, "")
-        return output
+            if opening < n:
+                backtrack(combination + "(", opening + 1, closing)
+            if closing < opening:
+                backtrack(combination + ")", opening, closing + 1)
+        backtrack("(", 1, 0)
+        return combinations

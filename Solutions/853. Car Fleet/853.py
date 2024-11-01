@@ -2,17 +2,17 @@ from typing import List
 
 class Solution:
     def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
-        road = []
-        stack = []
-        for i, num in enumerate(position):
-            road.append([num, speed[i]])
-        
-        road = sorted(road)
+        fleets = 1
+        track = []
 
-        for j in range (len(road) - 1, -1, -1):
-            tt = (target - road[j][0]) / road[j][1]
-            if not stack: 
-                stack.append(tt)
-            elif stack and stack[-1] < tt:
-                stack.append(tt)
-        return len(stack)
+        for i in range(len(position)):
+            track.append((position[i], (target - position[i]) / speed[i]))
+        
+        track.sort()
+
+        maxTOA = track[-1][1]
+        for i in range(len(track) - 2, -1, -1):
+            if track[i][1] > maxTOA:
+                maxTOA = track[i][1]
+                fleets += 1
+        return fleets 

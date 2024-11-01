@@ -1,49 +1,19 @@
-1. Share questions you would ask to help understand the question:
-- Are we allowed to use more than one data structure?
-- Will there be consecutive min stack initializations?
+1. List out any clarifying questions:
+- Can I assume the pops, tops, and getmins will only be called when there is at least one number on the stack?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Stacks (Likely)
-- Queue (Neutral)
+2. List out 1-3 data structures/algorithms that could be useful:
+- Stacks
 
-3. Write out in plain English what you want to do: 
-- So the idea I got is to utilize two stacks, one that acts to mimic the one the user creates, and the other handling the min values
-- in push: add the val in the regular stack, and only in the min stack if the val is a new min
-- in pop: remove the top values from both stacks 
-- in top: get the top value from the regular stack
-- in getMin: get the top value from the min stack
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- Since I need to emulate a min stack with O(1) time compexities for its functions, using a stack would be very useful. The idea of push, pop, and top should be easy. 
+- However, the getMin is a bit tricky
+- If I hold the min with an int, I need a way to remember all previous mins. If I pop what was the min, I need to set the int to what was the previous min
+- Since there is no way to know how many new mins are set, I theoretically need to hold all values if every value is pushed in decensding order
+- So, how about I also use a stack to just hold the min, instead of an int 
+- I'll track the min at every push so that I always have a min in memory. Then whenever I pop, I just pop from both stacks 
 
-4. Translate each sub-problem into pseudocode:
-- in init: Initialize two stacks: stack and minStack
-- in push: push the val in the regular stack, and only in the min stack if the val is a new min. Else, add the current min value to the top of the min stack again
-- in pop: pop from both stacks 
-- in top: peek from the regular stack
-- in getMin: peek from the min stack
-    
-5. Translate the pseudocode into Python and share your final answer:
-  <!--  
-  class MinStack:
+4. Assess the space/time complexity:
+- Space: O(2n) -> O(n) since there will be n calls, and if they are all push calls with each number in decreasing order, then both stacks will have n numbers in them
+- Time: O(1) for each function call
 
-    def __init__(self):
-        self.stack = []
-        self.minStack = []
-
-    def push(self, val: int) -> None:
-        self.stack.append(val)
-        minVal = min(val, self.getMin()) if self.minStack else val  
-        self.minStack.append(minVal)
-
-    def pop(self) -> None:
-        self.stack.pop()
-        self.minStack.pop()
-
-    def top(self) -> int:
-        return self.stack[-1]
-
-    def getMin(self) -> int:
-        return self.minStack[-1]        
-   -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that it is an easy algorithm to follow through will, and illustrating how test cases work can be easily drawn
-- One weak area is that it uses two stacks. There is actually a cool solution that utilizes one stacks and instead of initializing two stacks, you can initialize one stack with: [ (None, float('inf')) ]. Then you just use [0] for the regular stack and [1] for the minStack
+5. Optional - Give any ways you would improve your solution:

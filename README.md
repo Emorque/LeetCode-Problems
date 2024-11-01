@@ -14,7 +14,7 @@
 | 10/16/24| 703 | Kth Largest Element in a Stream        | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)                             |
 | 6/27/24 | 445 | Add Two Numbers II                     | Medium     | [Here](https://leetcode.com/problems/add-two-numbers-ii/description/)                                          |
 | 10/24/24| 128 | Longest Consecutive Sequence           | Medium     | [Here](https://leetcode.com/problems/longest-consecutive-sequence/description/)                                |
-| 7/3/24  | 155 | Min Stack                              | Medium     | [Here](https://leetcode.com/problems/min-stack/description/)                                                   |
+| 10/28/24| 155 | Min Stack                              | Medium     | [Here](https://leetcode.com/problems/min-stack/description/)                                                   |
 | 7/5/24  | 142 | Linked List Cycle II                   | Medium     | [Here](https://leetcode.com/problems/linked-list-cycle-ii/description/)                                        |
 | 7/5/24  | 232 | Implement Queue using Stacks           | Easy       | [Here](https://leetcode.com/problems/implement-queue-using-stacks/description/)                                |
 | 7/6/24  | 680 | Valid Palindrome II                    | Easy       | [Here](https://leetcode.com/problems/valid-palindrome-ii/description/)                                         |
@@ -24,7 +24,7 @@
 | 7/7/24  | 82  | Remove Duplicates from Sorted List II  | Medium     | [Here](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/)                       |
 | 7/8/24  | 1598| Crawler Log Folder                     | Easy       | [Here](https://leetcode.com/problems/crawler-log-folder/description/)                                          |
 | 7/9/24  | 50  | Pow(x, n)                              | Medium     | [Here](https://leetcode.com/problems/powx-n/description/)                                                      |
-| 7/10/24 | 875 | Koko Eating Bananas                    | Medium     | [Here](https://leetcode.com/problems/koko-eating-bananas/description/)                                         |
+| 10/28/24| 875 | Koko Eating Bananas                    | Medium     | [Here](https://leetcode.com/problems/koko-eating-bananas/description/)                                         |
 | 10/24/24| 11  | Container With Most Water              | Medium     | [Here](https://leetcode.com/problems/container-with-most-water/description/)                                   |
 | 7/12/24 | 56  | Merge Intervals                        | Medium     | [Here](https://leetcode.com/problems/merge-intervals/description/)                                             |
 | 10/16/24| 226 | Invert Binary Tree                     | Easy       | [Here](https://leetcode.com/problems/invert-binary-tree/description/)                                          |
@@ -76,25 +76,25 @@
 | 10/24/24| 167 | Two Sum II - Input Array Is Sorted     | Medium     | [Here](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)                            |
 | 10/24/24| 15  | 3Sum                                   | Medium     | [Here](https://leetcode.com/problems/3sum/description/)                                                        |
 | 8/23/24 | 42  | Trapping Rain Water                    | Hard       | [Here](https://leetcode.com/problems/trapping-rain-water/description/)                                         |
-| 8/24/24 | 150 | Evaluate Reverse Polish Notation       | Medium     | [Here](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)                            |
-| 8/24/24 | 22  | Generate Parentheses                   | Medium     | [Here](https://leetcode.com/problems/generate-parentheses/description/)                                        |
-| 8/24/24 | 739 | Daily Temperatures                     | Medium     | [Here](https://leetcode.com/problems/daily-temperatures/description/)                                          |
-| 8/24/24 | 853 | Car Fleet                              | Medium     | [Here](https://leetcode.com/problems/car-fleet/description/)                                                   |
+| 10/28/24| 150 | Evaluate Reverse Polish Notation       | Medium     | [Here](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)                            |
+| 10/28/24| 22  | Generate Parentheses                   | Medium     | [Here](https://leetcode.com/problems/generate-parentheses/description/)                                        |
+| 10/28/24| 739 | Daily Temperatures                     | Medium     | [Here](https://leetcode.com/problems/daily-temperatures/description/)                                          |
+| 10/28/24| 853 | Car Fleet                              | Medium     | [Here](https://leetcode.com/problems/car-fleet/description/)                                                   |
 | 8/28/24 | 84  | Largest Rectangle in Histogram         | Hard       | [Here](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)                              |
-| 8/28/24 | 74  | Search a 2D Matrix                     | Medium     | [Here](https://leetcode.com/problems/search-a-2d-matrix/description/)                                          |
-| 8/28/24 | 153 |Find Minimum in Rotated Sorted Array    | Medium     | [Here](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)                        |
-| 8/28/24 | 33  | Search in Rotated Sorted Array         | Medium     | [Here](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)                              |
+| 10/28/24| 74  | Search a 2D Matrix                     | Medium     | [Here](https://leetcode.com/problems/search-a-2d-matrix/description/)                                          |
+| 10/28/24| 153 |Find Minimum in Rotated Sorted Array    | Medium     | [Here](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)                        |
+| 10/28/24| 33  | Search in Rotated Sorted Array         | Medium     | [Here](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)                              |
 | 10/24/24| 3   | Longest Substring W/o Repeating Chars. | Medium     | [Here](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)              |
 | 8/29/24 | 4   | Median of Two Sorted Arrays            | Hard       | [Here](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                 |
-| 8/29/24 | 981 | Time Based Key-Value Store             | Medium     | [Here](https://leetcode.com/problems/time-based-key-value-store/description/)                                  |
+| 10/28/24| 981 | Time Based Key-Value Store             | Medium     | [Here](https://leetcode.com/problems/time-based-key-value-store/description/)                                  |
 | 10/24/24| 424 | Longest Repeating Character Replacement| Medium     | [Here](https://leetcode.com/problems/longest-repeating-character-replacement/description/)                     |
 | 10/24/24| 567 | Permutation in String                  | Medium     | [Here](https://leetcode.com/problems/permutation-in-string/description/)                                       |
 | 10/16/24| 206 | Reverse Linked List                    | Easy       | [Here](https://leetcode.com/problems/reverse-linked-list/description/)                                         |
-| 9/4/24  | 143 | Reorder List                           | Medium     | [Here](https://leetcode.com/problems/reorder-list/description/)                                                |
-| 9/4/24  | 138 | Copy List with Random Pointer          | Medium     | [Here](https://leetcode.com/problems/copy-list-with-random-pointer/description/)                               |
+| 10/28/24| 143 | Reorder List                           | Medium     | [Here](https://leetcode.com/problems/reorder-list/description/)                                                |
+| 10/28/24| 138 | Copy List with Random Pointer          | Medium     | [Here](https://leetcode.com/problems/copy-list-with-random-pointer/description/)                               |
 | 10/16/24| 141 | Linked List Cycle                      | Easy       | [Here](https://leetcode.com/problems/linked-list-cycle/description/)                                           |
-| 9/4/24  | 287 | Find the Duplicate Number              | Medium     | [Here](https://leetcode.com/problems/find-the-duplicate-number/description/)                                   |
-| 9/5/24  | 146 | LRU Cache                              | Medium     | [Here](https://leetcode.com/problems/lru-cache/description/)                                                   |
+| 10/28/24| 287 | Find the Duplicate Number              | Medium     | [Here](https://leetcode.com/problems/find-the-duplicate-number/description/)                                   |
+| 10/28/24| 146 | LRU Cache                              | Medium     | [Here](https://leetcode.com/problems/lru-cache/description/)                                                   |
 | 10/16/24| 572 | Subtree of Another Tree                | Easy       | [Here](https://leetcode.com/problems/subtree-of-another-tree/description/)                                     |
 | 9/5/24  | 235 | LCA of a Binary Search Tree            | Medium     | [Here](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)              |
 | 9/7/24  | 199 | Binary Tree Right Side View            | Medium     | [Here](https://leetcode.com/problems/binary-tree-right-side-view/description/)                                 |    
@@ -166,3 +166,5 @@
 | 10/16/24| 100 | Same Tree                              | Easy       | [Here](https://leetcode.com/problems/same-tree/description/)                                                   |
 | 10/16/24| 1046| Last Stone Weight                      | Easy       | [Here](https://leetcode.com/problems/last-stone-weight/description/)                                           |
 | 10/24/24| 36  | Valid Sudoku                           | Medium     | [Here](https://leetcode.com/problems/valid-sudoku/description/)                                                |
+| 10/28/24| 19  | Remove Nth Node From End of List       | Medium     | [Here](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)                            |
+| 10/28/24| 2   | Add Two Numbers                        | Medium     | [Here](https://leetcode.com/problems/add-two-numbers/description/)                                             |
