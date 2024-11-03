@@ -1,13 +1,11 @@
-from typing import List
 import heapq
+from typing import List
 
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
-        numsSort = [-num for num in nums]
+        heapq.heapify(nums)
 
-        heapq.heapify(numsSort)
+        for i in range(len(nums) - k):
+            heapq.heappop(nums)
 
-        for i in range(k-1):
-            heapq.heappop(numsSort)
-        
-        return numsSort[0] * -1
+        return nums[0]

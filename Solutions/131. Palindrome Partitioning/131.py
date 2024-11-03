@@ -1,28 +1,28 @@
-from typing import List
-
 class Solution:
     def partition(self, s: str) -> List[List[str]]:
-        output, currList = [], []
-        sLen = len(s)
+        def isPalindrome(substring: str) -> bool:
+            left,right = 0, len(substring) - 1
 
-        def isPalindrome(subString):
-            p1, p2 = 0, len(subString) - 1
-
-            while p1 < p2:
-                if subString[p1] != subString[p2]:
+            while left < right:
+                if substring[left] != substring[right]:
                     return False
-                p1 += 1
-                p2 -= 1
+                left += 1
+                right -= 1
             return True
+        
+        partitions = []
+        palindromes = []
 
-        def dfs(subString):
-            if len(subString) == 0: 
-                output.append(currList.copy())
+        def helper(substring):
+            if len(substring) == 0:
+                partitions.append(palindromes[:])
                 return
-            for i in range(len(subString)):
-                if isPalindrome(subString[:i + 1]):
-                    currList.append(subString[:i + 1])
-                    dfs(subString[i + 1:])
-                    currList.pop()
-        dfs(s)
-        return output
+        
+            for i in range(len(substring)):    
+                if isPalindrome(substring[:i + 1]):
+                    palindromes.append(substring[:i + 1])
+                    helper(substring[i + 1:])
+                    palindromes.pop()
+        
+        helper(s)
+        return partitions

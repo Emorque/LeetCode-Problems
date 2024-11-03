@@ -1,3 +1,5 @@
+from collections import deque
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -7,17 +9,18 @@ class TreeNode:
 
 class Solution:
     def goodNodes(self, root: TreeNode) -> int:
-        output = 0 
+        good = 0
+        queue = deque()
 
-        def DFS(node, maxValue):
-            nonlocal output
-            if node.val >= maxValue:
-                output += 1
-            maxValue = max(maxValue, node.val)
-            if node.left:
-                DFS(node.left, maxValue)
-            if node.right:
-                DFS(node.right, maxValue)
+        if root:
+            queue.append((root, root.val))
         
-        DFS(root, root.val)
-        return output
+        while queue:
+            node, greatest_val = queue.popleft()
+            if node.val >= greatest_val:
+                good += 1
+            if node.left:
+                queue.append((node.left, max(node.val, greatest_val)))
+            if node.right:
+                queue.append((node.right, max(node.val, greatest_val)))
+        return good

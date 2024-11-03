@@ -1,17 +1,14 @@
-from typing import List
 import heapq
+from typing import List
+from math import sqrt
 
 class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
         heap = []
-        heapq.heapify(heap)
-        output = [0] * k
-
-        for x,y in points:
-            distance = sqrt(x ** 2 + y ** 2)                
-            heapq.heappush(heap, (distance, (x,y)))
-
+        for x, y in points:
+            heapq.heappush(heap, ((sqrt(x**2 + y**2), (x, y))))
+        
+        closest_points = []
         for i in range(k):
-            output[i] = heapq.heappop(heap)[1]
-            
-        return output
+            closest_points.append(heapq.heappop(heap)[1])
+        return closest_points

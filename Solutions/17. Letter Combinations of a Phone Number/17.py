@@ -2,18 +2,26 @@ from typing import List
 
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
-        numpad = {"2": "abc", "3": "def", "4": "ghi", "5": "jkl", "6": "mno", "7": "pqrs", "8": "tuv", "9": "wxyz"}
-        output = []
-        digitsLen = len(digits)
+        numpad = {
+            "2": "abc",
+            "3": "def",
+            "4": "ghi",
+            "5": "jkl",
+            "6": "mno",
+            "7": "pqrs",
+            "8": "tuv",
+            "9": "wxyz"
+        }
 
-        if digitsLen == 0:
-            return output
+        combinations = []
 
-        def dfs(currIndex, currString):
-            if currIndex == digitsLen:
-                output.append(currString)
+        def helper(index, currentString):
+            if index == len(digits):
+                combinations.append(currentString[:])
                 return
-            for c in numpad[digits[currIndex]]:
-                dfs(currIndex + 1, currString + c)
-        dfs(0, "")
-        return output
+            
+            for char in numpad[digits[index]]:
+                helper(index + 1, currentString + char)
+
+        helper(0, "")
+        return combinations if digits else []

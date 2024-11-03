@@ -1,36 +1,19 @@
-1. Share 2 questions you would ask to help understand the question:
-- Can this be done using an external data structure?
-- What if k is larger than the number of elements? ex: k = 10 when nums only of size 6
+1. List out any clarifying questions:
+- Do you consider using a heap as sorting?
+- Are there duplicate numbers?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Set (Unlikely)
-- Two Pointer (Unlikely)
-- Heap (Likely)
-  
-3. Write out in plain English what you want to do: 
-- There are some things that prevent the use of other data structures / processes and explain why a heap would be best
-  - Set: We are looking for the kth largest, not caring about the kth largest distinct, so we do can about duplicates
-  - Two pointer: Since the array is not sorted, two pointers and other pointer-like solutions do not help
+2. List out 1-3 data structures/algorithms that could be useful:
+- Heap
 
-  - Heap: Heaps work because it can sort the list and when deciding to find the kth largest, we can just pop the root until we find the kth largest.
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- Using a heap, I can heapify the nums list so that the min value is always what get popped
+- Then, I can pop from nums list len(nums) -k times and return whats on top
 
-4. Translate each sub-problem into pseudocode:
-- We want to heapify the list.
-  - However, since heapify ordering from smallest to largest, we just have to use the negative values of each element in nums 
-- We then pop the root of the heap k-1 times
-- We then return the root of the heap times -1 to reverse the inital negations we did
+4. Assess the space/time complexity:
+- Space: O(1) since I am not creating extra space 
+- Time: O((n-k)logn * logn) -> O((n-k)logn). The second logn comes from heapify. The n-klogn comes from how I need to perform logn heappop (len(nums) -k) times
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- def findKthLargest(nums: List[int], k: int) -> int:
-  numsSort = [-num for num in nums]
-
-  heapq.heapify(numsSort)
-
-  for i in range(k-1):
-      heapq.heappop(numsSort)
-
-  return numsSort[0] * -1 -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strength area is that the algorithm utilizes the benefits of heap to its advantage with its time complexity
-- One weak area is that this does require another data structure to hold the negated values of nums. A solution could be done without needing 'numsSort'
+5. Optional - Give any ways you would improve your solution:
+- There is actually a really cool intuitive, simplier solution
+- You get the minimum and maximum number in the array, Then you create a list with this range, and then go through the list again, populating the elements in it
+- Then itearte backwards in this list k times until k == 0. You then return your current number

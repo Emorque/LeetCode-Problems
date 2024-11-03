@@ -1,46 +1,17 @@
-1. Share questions you would ask to help understand the question:
-- Can this be thought of like a tree?
+1. List out any clarifying questions:
+- Are there duplicate numbers?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- DFS (Likely)
+2. List out 1-3 data structures/algorithms that could be useful:
+- Backtracking
 
-3. Write out in plain English what you want to do: 
-- After drawing out a decision tree, each level of the tree basically represents if the current number was added or not to the current list
-- At every level, this means that the number of lists grows by 2x, which makes sense, since the number either gets added or not
-- This can be done via a helper function that will travel down the path, carrying it's current subset, until it reaches the very end (the entire nums array has been traversed for this list)
-- At this point, the resulting list gets appended to a general output list
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- Drawing a decision tree was very helpful, as it shows how for each number, I either add or don't add the current number to my subset
+- So for every number, I have two decisions
+- To do this in code, I can create a recursive function that carries the current index, and takes on one path that doesn't add the current number and another path that does
+- Once the index is at the end, I can add a copy of my created subset to the overall result list
 
-4. Translate each sub-problem into pseudocode:
-- initialize an output list
-- numsLength = len(nums) 
-- create a dfs helper function (currList, currIndex):
-  - if currIndex == numsLength:
-    - append currList to output
-    - return 
-  - dfs(currList, currIndex + 1)
-  - currList.append(nums[currIndex])
-  - dfs(currList, currIndex + 1)
-- dfs([], 0)
-- return output
+4. Assess the space/time complexity:
+- Space: O(2^n) as for each number in the nums list, I make 2 choices, which results in 2 recursive calls on the stack
+- Time: O(2^n) for the same reason. This is also illustrated with a decision tree
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!--  class Solution:
-    def subsets(self, nums: List[int]) -> List[List[int]]:
-        output, currList = [], []
-        numsLength = len(nums)
-
-        def dfs(currIndex):
-            if currIndex == numsLength:
-                output.append(currList.copy())
-                return
-            currList.append(nums[currIndex])
-            dfs(currIndex + 1)
-            currList.pop()
-            dfs(currIndex + 1)
-
-        dfs(0)
-        return output -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that this algorithm is decently easy to follow, with each decision represented by the two dfs statements in the dfs function. Adding or not adding the current num 
-- One weak area is that this was a rework, since I realized python was not appending a copy of the currList originally. Therefore, currList was removed as a parameter, and so, is adjusted for each dfs call. A copy is then appended to the output. Without this, it would still get edited afterwords. 
+5. Optional - Give any ways you would improve your solution:

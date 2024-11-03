@@ -9,7 +9,7 @@
 | 6/15/24 | 1207| Unique Number of Occurrences           | Easy       | [Here](https://leetcode.com/problems/unique-number-of-occurrences/description/)                                |
 | 10/16/24| 125 | Valid Palindrome                       | Easy       | [Here](https://leetcode.com/problems/valid-palindrome/description/)                                            |
 | 6/23/24 | 1700| Number of Students Unable to Eat Lunch | Easy       | [Here](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/description/)                      |
-| 10/24/24| 215 | Kth Largest Element in an Array        | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)                             |
+| 11/1/24 | 215 | Kth Largest Element in an Array        | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)                             |
 | 10/16/24| 20  | Valid Parentheses                      | Easy       | [Here](https://leetcode.com/problems/valid-parentheses/description/)                                           |
 | 10/16/24| 703 | Kth Largest Element in a Stream        | Easy       | [Here](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)                             |
 | 6/27/24 | 445 | Add Two Numbers II                     | Medium     | [Here](https://leetcode.com/problems/add-two-numbers-ii/description/)                                          |
@@ -40,13 +40,13 @@
 | 10/16/24| 543 | Diameter of Binary Tree                | Easy       | [Here](https://leetcode.com/problems/diameter-of-binary-tree/description/)                                     |
 | 7/18/24 | 1530| Number of Good Leaf Nodes Pairs        | Medium     | [Here](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/)                             |
 | 7/19/24 | 1380| Lucky Numbers in a Matrix              | Easy       | [Here](https://leetcode.com/problems/lucky-numbers-in-a-matrix/description/)                                   |
-| 7/20/24 | 102 | Binary Tree Level Order Traversal      | Medium     | [Here](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)                           |
+| 11/1/24 | 102 | Binary Tree Level Order Traversal      | Medium     | [Here](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)                           |
 | 7/20/24 | 863 | All Nodes Distance K in Binary Tree    | Medium     | [Here](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/description/)                         |
 | 7/20/24 | 701 | Insert into a Binary Search Tree       | Medium     | [Here](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/)                            |
-| 7/20/24 | 230 | Kth Smallest Element in a BST          | Medium     | [Here](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/)                               |
+| 11/1/24 | 230 | Kth Smallest Element in a BST          | Medium     | [Here](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/)                               |
 | 7/21/24 | 979 | Distribute Coins in Binary Tree        | Medium     | [Here](https://leetcode.com/problems/distribute-coins-in-binary-tree/description/)                             |
 | 7/22/24 | 236 | Lowest Common Ancestor of a Binary Tree| Medium     | [Here](https://leetcode.com/problems/distribute-coins-in-binary-tree/description/)                             |
-| 7/25/24 | 98  | Validate Binary Search Tree            | Medium     | [Here](https://leetcode.com/problems/validate-binary-search-tree/description/)                                 |
+| 11/1/24 | 98  | Validate Binary Search Tree            | Medium     | [Here](https://leetcode.com/problems/validate-binary-search-tree/description/)                                 |
 | 7/28/24 | 509 | Fibonacci Number                       | Easy       | [Here](https://leetcode.com/problems/fibonacci-number/description/)                                            |
 | 10/24/24| 746 | Min Cost Climbing Stairs               | Easy       | [Here](https://leetcode.com/problems/min-cost-climbing-stairs/description/)                                    |
 | 7/28/24 | 832 | Flipping an Image                      | Easy       | [Here](https://leetcode.com/problems/flipping-an-image/description/)                                           |
@@ -96,23 +96,23 @@
 | 10/28/24| 287 | Find the Duplicate Number              | Medium     | [Here](https://leetcode.com/problems/find-the-duplicate-number/description/)                                   |
 | 10/28/24| 146 | LRU Cache                              | Medium     | [Here](https://leetcode.com/problems/lru-cache/description/)                                                   |
 | 10/16/24| 572 | Subtree of Another Tree                | Easy       | [Here](https://leetcode.com/problems/subtree-of-another-tree/description/)                                     |
-| 9/5/24  | 235 | LCA of a Binary Search Tree            | Medium     | [Here](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)              |
-| 9/7/24  | 199 | Binary Tree Right Side View            | Medium     | [Here](https://leetcode.com/problems/binary-tree-right-side-view/description/)                                 |    
-| 9/7/24  | 1448| Count Good Nodes in Binary Tree        | Medium     | [Here](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/)                             |
-| 9/7/24  | 105 | Construct BT from Preorder and Inorder | Medium     | [Here](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)   |
+| 11/1/24 | 235 | LCA of a Binary Search Tree            | Medium     | [Here](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)              |
+| 11/1/24 | 199 | Binary Tree Right Side View            | Medium     | [Here](https://leetcode.com/problems/binary-tree-right-side-view/description/)                                 |    
+| 11/1/24 | 1448| Count Good Nodes in Binary Tree        | Medium     | [Here](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/)                             |
+| 11/1/24 | 105 | Construct BT from Preorder and Inorder | Medium     | [Here](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)   |
 | 9/8/24  | 208 | Implement Trie (Prefix Tree)           | Medium     | [Here](https://leetcode.com/problems/implement-trie-prefix-tree/description/)                                  |
 | 9/8/24  | 211 | Design Add and Search Words Data Struc.| Medium     | [Here](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/)                  |
-| 9/8/24  | 973 | K Closest Points to Origin             | Medium     | [Here](https://leetcode.com/problems/k-closest-points-to-origin/description/)                                  |
-| 9/8/24  | 621 | Task Scheduler                         | Medium     | [Here](https://leetcode.com/problems/task-scheduler/description/)                                              |
-| 9/8/24  | 355 | Design Twitter                         | Medium     | [Here](https://leetcode.com/problems/design-twitter/description/)                                              |
-| 9/8/24  | 78  | Subsets                                | Medium     | [Here](https://leetcode.com/problems/subsets/description/)                                                     |
-| 9/9/24  | 39  | Combination Sum                        | Medium     | [Here](https://leetcode.com/problems/combination-sum/description/)                                             |
-| 9/9/24  | 46  | Permutations                           | Medium     | [Here](https://leetcode.com/problems/permutations/description/)                                                |
-| 9/9/24  | 90  | Subsets II                             | Medium     | [Here](https://leetcode.com/problems/subsets-ii/description/)                                                  |
-| 9/9/24  | 40  | Combination Sum II                     | Medium     | [Here](https://leetcode.com/problems/combination-sum-ii/description/)                                          |
-| 9/9/24  | 79  | Word Search                            | Medium     | [Here](https://leetcode.com/problems/word-search/description/)                                                 |
-| 9/9/24  | 131 | Palindrome Partitioning                | Medium     | [Here](https://leetcode.com/problems/palindrome-partitioning/description/)                                     |
-| 9/9/24  | 17  | Letter Combinations of a Phone Number  | Medium     | [Here](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)                       |
+| 11/1/24 | 973 | K Closest Points to Origin             | Medium     | [Here](https://leetcode.com/problems/k-closest-points-to-origin/description/)                                  |
+| 11/1/24 | 621 | Task Scheduler                         | Medium     | [Here](https://leetcode.com/problems/task-scheduler/description/)                                              |
+| 11/1/24 | 355 | Design Twitter                         | Medium     | [Here](https://leetcode.com/problems/design-twitter/description/)                                              |
+| 11/1/24 | 78  | Subsets                                | Medium     | [Here](https://leetcode.com/problems/subsets/description/)                                                     |
+| 11/1/24 | 39  | Combination Sum                        | Medium     | [Here](https://leetcode.com/problems/combination-sum/description/)                                             |
+| 11/1/24 | 46  | Permutations                           | Medium     | [Here](https://leetcode.com/problems/permutations/description/)                                                |
+| 11/1/24 | 90  | Subsets II                             | Medium     | [Here](https://leetcode.com/problems/subsets-ii/description/)                                                  |
+| 11/1/24 | 40  | Combination Sum II                     | Medium     | [Here](https://leetcode.com/problems/combination-sum-ii/description/)                                          |
+| 11/1/24 | 79  | Word Search                            | Medium     | [Here](https://leetcode.com/problems/word-search/description/)                                                 |
+| 11/1/24 | 131 | Palindrome Partitioning                | Medium     | [Here](https://leetcode.com/problems/palindrome-partitioning/description/)                                     |
+| 11/1/24 | 17  | Letter Combinations of a Phone Number  | Medium     | [Here](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)                       |
 | 9/10/24 | 57  | Insert Interval                        | Medium     | [Here](https://leetcode.com/problems/insert-interval/description/)                                             |
 | 9/10/24 | 435 | Non-overlapping Intervals              | Medium     | [Here](https://leetcode.com/problems/non-overlapping-intervals/description/)                                   |
 | 9/10/24 | 53  | Maximum Subarray                       | Medium     | [Here](https://leetcode.com/problems/maximum-subarray/description/)                                            |

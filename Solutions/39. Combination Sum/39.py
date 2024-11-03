@@ -2,28 +2,28 @@ from typing import List
 
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        output, currList = [], []
-        candLength = len(candidates)
+        combinations = []
+        combination = []
 
-        def dfs(currSum, currIndex):
-            for i in range(currIndex, candLength):
-                currNum = candidates[i]
+        def helper(index, currentSum):
+            if currentSum == target:
+                combinations.append(combination[:])
+                return
+            if currentSum > target or index == len(candidates):
+                return
+            
+            combination.append(candidates[index])
+            helper(index, currentSum + candidates[index])
 
-                if currSum + currNum == target:
-                    currList.append(currNum)
-                    output.append(currList.copy())
-                    currList.pop()
-                elif currSum + currNum < target:
-                    currList.append(currNum)
-                    dfs(currSum + currNum, i)
-                    currList.pop()
-        
-        for c in range(candLength):
-            if candidates[c] == target:
-                output.append([target])
-            elif candidates[c] < target:
-                currList.append(candidates[c])
-                dfs(candidates[c], c)
-                currList.pop()
+            combination.pop()
+            helper(index + 1, currentSum)
 
-        return output
+        for i in range(len(candidates)):
+            num = candidates[i]
+            if num > target:
+                continue
+            combination.append(num)
+            helper(i, num)
+            combination.pop()
+            
+        return combinations

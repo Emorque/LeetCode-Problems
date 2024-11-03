@@ -6,23 +6,17 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
-        output = 0
-        def helper(root: Optional[TreeNode]):
-            nonlocal k 
-            nonlocal output
-            if not root or k < 0:
-                return 
-            helper(root.left)
+        stack = []
+        
+        while stack or root:
+            while root: 
+                stack.append(root)
+                root = root.left
+            
+            root = stack.pop()
             k -= 1
             if k == 0:
-                output = root.val
-                k -= 1
-                return
-            
-            helper(root.right)
-
-        helper(root)
-        return output
+                return root.val
+            root = root.right

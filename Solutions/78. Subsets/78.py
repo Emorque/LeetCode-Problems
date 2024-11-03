@@ -2,17 +2,16 @@ from typing import List
 
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
-        output, currList = [], []
-        numsLength = len(nums)
-
-        def dfs(currIndex):
-            if currIndex == numsLength:
-                output.append(currList.copy())
+        collection = []
+        subset = []
+        def helper(index):
+            if index == len(nums):
+                collection.append(subset[:])
                 return
-            currList.append(nums[currIndex])
-            dfs(currIndex + 1)
-            currList.pop()
-            dfs(currIndex + 1)
+            subset.append(nums[index])
+            helper(index + 1)
 
-        dfs(0)
-        return output
+            subset.pop()
+            helper(index + 1)
+        helper(0)
+        return collection

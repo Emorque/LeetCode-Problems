@@ -7,12 +7,9 @@ class TreeNode:
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        maxNum = max(p.val, q.val)
-        minNum = min(p.val, q.val)
-
-        while not(root.val <= maxNum and root.val >= minNum):
-            if root.val > maxNum:
-                root = root.left
-            else:
-                root = root.right
-        return root
+        if p.val < root.val and q.val < root.val:
+            return self.lowestCommonAncestor(root.left, p, q)
+        elif p.val > root.val and q.val > root.val:
+            return self.lowestCommonAncestor(root.right, p, q)
+        else:
+            return root

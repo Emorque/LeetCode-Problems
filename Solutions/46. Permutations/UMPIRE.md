@@ -1,73 +1,19 @@
-1. Share questions you would ask to help understand the question:
-- Can the nums list be empty?
+1. List out any clarifying questions:
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Backtracking (Likely)
-- DFS (Likely)
-- Set (Likely)
 
-3. Write out in plain English what you want to do: 
-- Thanks to drawing out a decision tree, I think using a backtracking algorithm with dfs would work
-- Since I want to adjust the nums list, I think duplicating it to be a set would be better, as removing is O(1)
-- Create a dfs helper function:
-    - that checks if any numbers are in a seen set. If the number isnt appends it to the currList. 
-    - then, call dfs and then remove that number from the seen set
-- create a while loop that iterates through the nums list with a similar logic
+2. List out 1-3 data structures/algorithms that could be useful:
+- Backtracking 
+- Set
 
-4. Translate each sub-problem into pseudocode:
-- initialize a seen set
-- intiailize an output, currList list 
-- get the length of the nums list
-- create a dfs helper function(currLength)
-    - if currLength == numsLength:
-        - append a copy of currList to output
-        - return
-    - for i in range(numsLength):
-        - if nums[i] not in set:
-            - currList.append(nums[i])
-            - set.add(nums[i])
-            - dfs(currLength + 1)
-            - currList.pop()
-            - set.remove(nums[i])
-- for num in nums:
-    - set.add(num)
-    - currList.append(num)
-    - dfs(1)
-    - set.remove(num)
-    - currList.pop()
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- Ideally I would start with 1, and then work through some n number paths that each are if I choose one of the rest of the numbers as the next number to add to my permutation
+- In order to record whether I have seen some number before, I'll use a set to record all current numbers in my permutation. This is only possible because the nums list only has unique numbers
+- So I'll use a helper function that passes in its current permutation, and then I'll have an outer set that records the currently appended numbers
+- Once a path is explored, I'll both pop that number from the permutation and remove it from my set
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def permute(self, nums: List[int]) -> List[List[int]]:
-        seen = set()
-        output, currList = [], []
+4. Assess the space/time complexity:
+- Space: O(n * n! + n) the lone n is from the set and n * n! coems from the storage of all the permutations
+- Time: O(n * n!) as for the size of n, I end up prodoucing n! permutations 
 
-        numsLength = len(nums)
-
-        def dfs(currLength):
-            if currLength == numsLength:
-                output.append(currList.copy())
-                return
-            for i in range(numsLength):
-                if nums[i] not in seen:
-                    currList.append(nums[i])
-                    seen.add(nums[i])
-                    dfs(currLength + 1)
-
-                    currList.pop()
-                    seen.remove(nums[i])
-
-        for num in nums:
-            seen.add(num)
-            currList.append(num)
-            dfs(1)
-            seen.remove(num)
-            currList.pop()
-
-        return output -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that backtracking is used to continually build a list to be appended to the output
-- One weak area is that for loop in the dfs function. I was having trouble thinking how I can check the list for "seen" numbers
-    - I thought of trying to pass a subList as a parameter, sort of like a part of the nums list gets sent without the appended num
-        - I couldn't wrap my head on an implementation of it, so I landed on this more brute force check 
+5. Optional - Give any ways you would improve your solution:
+- Seeing other solutions, I realized that while the set does work, it is still the same time complexity as just exploring the current permutation for a number. All without the need of an extra data structure
