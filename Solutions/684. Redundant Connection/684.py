@@ -2,36 +2,30 @@ from typing import List
 
 class Solution:
     def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
-        parents, size = [], []
+        parent = [i for i in range(len(edges) + 1)]
+        rank = [1] * (len(edges) + 1)
 
-        for i in range(len(edges) + 1):
-            parents.append(i)
-            size.append(1)
-        
-        def getParent(n):
-            p = parents[n]
-            while p != parents[p]:
-                p = parents[p]
+        def find(n):
+            p = parent[n]
+            while p != parent[p]:
+                p = parent[p]
             return p
         
-        def setParents(n1, n2):
-            p1, p2 = getParent(n1), getParent(n2)
+        def union(n1, n2):
+            p1, p2 = find(n1), find(n2)
 
             if p1 == p2:
                 return False
             
-            size1, size2 = size[p1], size[p2]
-
-            if size1 > size2:
-                parents[p2] = parents[p1]
-                size[p2] += size[p1]
+            if rank[p1] > rank[p2]:
+                parent[p2] = p1
+                rank[p1] += rank[p2]
             else:
-                parents[p1] = parents[p2]
-                size[p1] += size[p2]
-
+                parent[p1] = p2
+                rank[p2] += rank[p1]
             return True
         
-        for a, b in edges:
-            if not setParents(a, b):
-                return [a,b]
-                
+        for n1, n2 in edges:
+            if union(n1, n2) == False:
+                return [n1,n2]
+            

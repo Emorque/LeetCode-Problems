@@ -2,38 +2,33 @@ from typing import List
 
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-        output = []
-        visited, accepted = set(), set()
-        courses = {}
-
-        for i in range(numCourses):
-            courses[i] = []
+        preq = [[] for i in range(numCourses)]
 
         for a, b in prerequisites:
-            courses[a].append(b)
+            preq[a].append(b)
         
-        def dfs(course) -> bool:
-            if course in accepted:
-                return True
-            if courses[course] == []:
-                output.append(course)
-                accepted.add(course)
+        visited = set()
+        schedule = []
+
+        def validCourse(course) -> bool:
+            if preq[course] == []: 
+                if course not in visited:
+                    visited.add(course)
+                    schedule.append(course)
                 return True
             if course in visited:
                 return False
+            
             visited.add(course)
-            
-            for preq in courses[course]:
-                if not dfs(preq):
+
+            for p in preq[course]:
+                if validCourse(p) == False:
                     return False
-            
-            visited.remove(course)
-            output.append(course)
-            accepted.add(course)
+            schedule.append(course)
+            preq[course] = []
             return True
-        
+            
         for i in range(numCourses):
-            if not dfs(i):
+            if validCourse(i) == False:
                 return []
-        
-        return output
+        return schedule

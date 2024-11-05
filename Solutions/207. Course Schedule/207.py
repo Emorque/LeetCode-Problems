@@ -2,30 +2,30 @@ from typing import List
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        visited = set()
-        courses = {}
-
-        for i in range(numCourses):
-            courses[i] = []
+        preq = [[] for i in range(numCourses)]
         
         for a, b in prerequisites:
-            courses[a].append(b)
+            preq[a].append(b)
         
-        def dfs(course) -> bool:
-            if courses[course] == []:
+        visited = set()
+        
+        def validCourse(course) -> bool:
+            if preq[course] == []:
                 return True
             if course in visited:
                 return False
             visited.add(course)
-            for preq in courses[course]:
-                if not dfs(preq):
+
+            for p in preq[course]:
+                if validCourse(p) == False:
                     return False
-            courses[course] = []
-            visited.remove(course)
+            preq[course] = []
             return True
-        
+            
         for i in range(numCourses):
-            if not dfs(i):
+            if validCourse(i) == False:
                 return False
+
+        # print(preq)
 
         return True

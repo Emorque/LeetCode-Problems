@@ -1,74 +1,17 @@
-1. Share questions you would ask to help understand the question:
-- Is there a chance that there are no islands present?
-- Can I edit the grid inplace?
+1. List out any clarifying questions:
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- BFS (Likely)
-- DFS (Likely)
 
-3. Write out in plain English what you want to do: 
-- What I am thinking, is to try using BFS or DFS to, from one piece of land, diverge and note all of the neighboring pieces of land; which in total equate to 1 island
-- Since there is no constraint that the grid cannot be edited, changing already traversed pieces of land to something like -1 can make it easy to skip these pieces of land
-- So, when one piece of land is found, perform DFS/BFS, and after this traversal is complete, incremenet some count by 1
-- Once the entire grid is explored, return output
+2. List out 1-3 data structures/algorithms that could be useful:
+- BFS
 
-4. Translate each sub-problem into pseudocode:
-- count = 0
-- row = len(grid)
-- col = len(grid[0])
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- The goal here is to iterate through each cell, and then once a cell with "1" is located, perform some traversal like BFS or DFS to locate all neighboring "1"s. All of these cells are part of one island. 
+- Once an island is completely traversed, increment some count by 1
+- To make sure that the same cell doesn't get considered for two seperate islands, once a "1" is seen, I replace it with a "0". 
 
-- def traverse(coordinates): 
-  - queue = [coordiantes]
-  - while queue:
-    - r, c = queue.pop()
-    - if r < 0 or r >= row or c < 0 or c >= col:
-      - continue
-    - if grid[r][c] != "1":
-      - continue
-    - grid[r][c] == "0"
-    - queue.append(r + 1, c)
-    - queue.append(r - 1, c)
-    - queue.append(r, c + 1)
-    - queue.append(r, c - 1)
+4. Assess the space/time complexity:
+- Space: O(n + m) for the number of islands, as BFS gets called n times. Then m for the queue structure as it holds m cells as once
+- Time: O(m*n) as I need to traverse all cells
 
-- for i in range(row):
-  - for j in range(col):
-    - if grid[i][j] == "1":
-      - traverse((i, j))
-      - count += 1
-
-- return count
-
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def numIslands(self, grid: List[List[str]]) -> int:
-        count = 0
-        row = len(grid)
-        col = len(grid[0])
-
-        def traverse(coordinates):
-            queue = [coordinates]
-
-            while queue:
-                r, c = queue.pop(0)
-                if r < 0 or r >= row or c < 0 or c >= col:
-                    continue
-                if grid[r][c] != "1":
-                    continue
-                grid[r][c] = "0"
-                queue.append((r + 1, c))
-                queue.append((r - 1, c))
-                queue.append((r, c + 1))
-                queue.append((r, c - 1))
-            
-        for i in range(row):
-            for j in range(col):
-                if grid[i][j] == "1":
-                    traverse((i, j))
-                    count += 1
-        
-        return count -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that this algorithm does not use a recursion stack, so it does have good memory usage
-- One weak area is that I should have some more explaination as to why I a BFS solution
+5. Optional - Give any ways you would improve your solution:
+- In this problem, using a queue is typical for a bfs solution, but given the logic that I was using, I thought just using a stack could work. After trying it, LC seemed to give similar times. I'll look into this
