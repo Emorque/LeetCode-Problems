@@ -1,21 +1,15 @@
 class Solution:
     def countSubstrings(self, s: str) -> int:
-        count = 0
-        left, right = 0, 0
+        palindromes = 0
+
+        def helper(left, right):
+            nonlocal palindromes
+            while left >= 0 and right <= len(s) - 1 and s[left] == s[right]:
+                left -= 1
+                right += 1
+                palindromes += 1
 
         for i in range(len(s)):
-            left, right = i, i
-
-            while left >= 0 and right < len(s) and s[left] == s[right]:
-                count += 1
-                left -= 1
-                right += 1
-            
-            left, right = i, i + 1
-
-            while left >= 0 and right < len(s) and s[left] == s[right]:
-                count += 1
-                left -= 1
-                right += 1
-        
-        return count
+            helper(i, i)
+            helper(i, i + 1)
+        return palindromes

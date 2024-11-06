@@ -2,15 +2,24 @@ from typing import List
 
 class Solution:
     def rob(self, nums: List[int]) -> int:
-        numsLength = len(nums)
+        # if len(nums) == 1:
+        #     return nums[0]
+        # if len(nums) == 2:
+        #     return max(nums[0], nums[1])
 
-        if numsLength == 1:
-            return nums[0]
+        # nums[1] = max(nums[0], nums[1])
+        # for i in range(2, len(nums)):
+        #     nums[i] = max(nums[i] + nums[i - 2], nums[i - 1])
         
-        if numsLength >= 3: 
-            nums[2] += nums[0]
+        # return nums[-1]
+
+        # Above works, bottom with remove that need of the first 5 lines of code
+
+        house1, house2 = 0,0
+
+        for num in nums:
+            temp = max(num + house1, house2)
+            house1 = house2
+            house2 = temp
         
-        for i in range(3, numsLength):
-            nums[i] += max(nums[i - 2], nums[i - 3])
-        
-        return max(nums[-1], nums[-2])
+        return house2
