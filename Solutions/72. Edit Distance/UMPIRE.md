@@ -5,12 +5,10 @@
 
 
 3. Break down the problem into subproblems, provide psuedocode for these subproblems:
-- My first idea is an n^2 approach, where for every point on the list, I check the other points and only pair up the points that have the smallest mahattan distance
-- Create an adj list
-- Keep adding distances to the minHeap and 
+
 
 4. Assess the space/time complexity:
 - Space: 
-- Time: up to n^2 nodes are going to be added to minHeap
+- Time:
 
 5. Optional - Give any ways you would improve your solution:
