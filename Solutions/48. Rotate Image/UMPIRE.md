@@ -1,46 +1,19 @@
-1. Share questions you would ask to help understand the question:
-- What is the range of numbers that each number in the grid can be?
-- What is the range that n can be in?
-- Are the values distinct?
+1. List out any clarifying questions:
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Math
 
-3. Write out in plain English what you want to do: 
-- Determine the number of times I am switching the numbers at each level (starting at n - 1)
-- Then I will set four pointer at each corner, set their numbers to temp variables and then resetting them to their respective temps
-- move the pointers accordingly
-- Once thats done, subtract that numbers at each level by 2 for the next level, and move the pointers to the inner layer
+2. List out 1-3 data structures/algorithms that could be useful:
 
-4. Translate each sub-problem into pseudocode:
-- We want to traverse n//2 layers
-- The number of times we want to rotate cells in a layer is layer - 1
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def rotate(self, matrix: List[List[int]]) -> None:
-        """
-        Do not return anything, modify matrix in-place instead.
-        """
-        layer = len(matrix) // 2
-        swaps = len(matrix) - 1
-        edge = len(matrix) - 1 
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- I think one way of going about this, is to think of the problem like:
+    - Take the four corners of the matrix, swap them with each other, and then look at the next corners to swap (clockwise orientation)
+    - I can consider the boundaries the same for all four sides the same, since this is an nxn matrix, a square
+    - Then to look into the next inner layer, I just decrement the boundaries by 2
+- I can do this with a left and right pointer, and have my for loop iterate through their difference, and after, have them go towards each other
+- Since a nxn matrix stops being rotated when the layer has no other layer within or is a single cell, I can stop once left == right
 
-        for i in range(layer):
-            for j in range(swaps):
-                topL = matrix[i][i + j]
-                topR = matrix[i + j][edge]
-                bottomR = matrix[edge][edge - j]
-                bottomL = matrix[edge - j][i]
+4. Assess the space/time complexity:
+- Space: O(1)
+- Time: O(n^2)
 
-                matrix[i][i + j] = bottomL
-                matrix[i + j][edge] = topL
-                matrix[edge][edge - j] = topR
-                matrix[edge - j][i] = bottomR
-
-            edge -= 1
-            swaps -= 2 -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that this algorithm is just the literal implementation of grabbing each corner element and then setting them accordingly, and then going inside one layer
-- One weak area is that there is a more efficient solution that is by doing a transpose, followed by a reversal. Something neet to know that equates to this rotation, which makes coding it easier
+5. Optional - Give any ways you would improve your solution:

@@ -5,21 +5,19 @@ class Solution:
         """
         Do not return anything, modify matrix in-place instead.
         """
-        layer = len(matrix) // 2
-        swaps = len(matrix) - 1
-        edge = len(matrix) - 1 
+        left, right = 0, len(matrix) - 1
 
-        for i in range(layer):
-            for j in range(swaps):
-                topL = matrix[i][i + j]
-                topR = matrix[i + j][edge]
-                bottomR = matrix[edge][edge - j]
-                bottomL = matrix[edge - j][i]
+        while left < right:
+            for i in range(right - left):
+                a = matrix[left][left + i]
+                b = matrix[left + i][right]
+                c = matrix[right][right - i]
+                d = matrix[right - i][left]
+            
+                matrix[left][left + i] = d
+                matrix[left + i][right] = a
+                matrix[right][right - i] = b
+                matrix[right - i][left] = c
 
-                matrix[i][i + j] = bottomL
-                matrix[i + j][edge] = topL
-                matrix[edge][edge - j] = topR
-                matrix[edge - j][i] = bottomR
-
-            edge -= 1
-            swaps -= 2
+            left += 1
+            right -= 1

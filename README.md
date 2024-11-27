@@ -53,7 +53,7 @@
 | 7/28/24 | 867 | Transpose Matrix                       | Easy       | [Here](https://leetcode.com/problems/transpose-matrix/description/)                                            |
 | 11/4/24 | 200 | Number of Islands                      | Medium     | [Here](https://leetcode.com/problems/number-of-islands/description/)                                           |
 | 11/4/24 | 695 | Max Area of Island                     | Medium     | [Here](https://leetcode.com/problems/max-area-of-island/description/)                                          |
-| 7/29/24 | 48  | Rotate Image                           | Medium     | [Here](https://leetcode.com/problems/rotate-image/description/)                                                |
+| 11/27/24| 48  | Rotate Image                           | Medium     | [Here](https://leetcode.com/problems/rotate-image/description/)                                                |
 | 7/30/24 | 54  | Spiral Matrix                          | Medium     | [Here](https://leetcode.com/problems/spiral-matrix/description/)                                               |
 | 7/31/24 | 419 | Battleships in a Board                 | Medium     | [Here](https://leetcode.com/problems/battleships-in-a-board/description/)                                      |
 | 11/4/24 | 994 | Rotting Oranges                        | Medium     | [Here](https://leetcode.com/problems/rotting-oranges/description/)                                             |
@@ -117,7 +117,7 @@
 | 9/10/24 | 435 | Non-overlapping Intervals              | Medium     | [Here](https://leetcode.com/problems/non-overlapping-intervals/description/)                                   |
 | 9/10/24 | 53  | Maximum Subarray                       | Medium     | [Here](https://leetcode.com/problems/maximum-subarray/description/)                                            |
 | 9/10/24 | 55  | Jump Game                              | Medium     | [Here](https://leetcode.com/problems/jump-game/description/)                                                   |
-| 9/10/24 | 45  | Jump Game II                           | Medium     | [Here](https://leetcode.com/problems/jump-game-ii/description/)                                                |
+| 11/26/24| 45  | Jump Game II                           | Medium     | [Here](https://leetcode.com/problems/jump-game-ii/description/)                                                |
 | 9/10/24 | 134 | Gas Station                            | Medium     | [Here](https://leetcode.com/problems/gas-station/description/)                                                 |
 | 9/12/24 | 846 | Hand of Straights                      | Medium     | [Here](https://leetcode.com/problems/hand-of-straights/description/)                                           |
 | 9/12/24 | 1899| Merge Triplets to Form Target Triplet  | Medium     | [Here](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/description/)                       |
@@ -145,7 +145,7 @@
 | 11/26/24| 518 | Coin Change II                         | Medium     | [Here](https://leetcode.com/problems/coin-change-ii/description/)                                              |
 | 11/06/24| 494 | Target Sum                             | Medium     | [Here](https://leetcode.com/problems/target-sum/description/)                                                  |
 | 11/26/24| 97  | Interleaving String                    | Medium     | [Here](https://leetcode.com/problems/interleaving-string/description/)                                         |
-| 11/26/24| 72  | Edit Distance                          | Medium     | [Here](https://leetcode.com/problems/edit-distance/description/)                                               |
+| 11/27/24| 72  | Edit Distance                          | Medium     | [Here](https://leetcode.com/problems/edit-distance/description/)                                               |
 | 11/4/24 | 1584| Min Cost to Connect All Points         | Medium     | [Here](https://leetcode.com/problems/min-cost-to-connect-all-points/description/)                              |
 | 11/4/24 | 743 | Network Delay Time                     | Medium     | [Here](https://leetcode.com/problems/network-delay-time/description/)                                          |
 | 10/24/24| 136 | Single Number                          | Easy       | [Here](https://leetcode.com/problems/single-number/description/)                                               |
@@ -169,3 +169,4 @@
 | 10/28/24| 19  | Remove Nth Node From End of List       | Medium     | [Here](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)                            |
 | 10/28/24| 2   | Add Two Numbers                        | Medium     | [Here](https://leetcode.com/problems/add-two-numbers/description/)                                             |
 | 11/26/24| 323 | Number of Connected Components In ...  | Medium     | [Here](https://leetcode.com/problems/add-two-numbers/description/)                                             |
+| 11/27/24| 253 | Meeting Rooms II                       | Medium     | [Here](https://leetcode.com/problems/meeting-rooms-ii/description/)                                            |
