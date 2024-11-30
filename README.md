@@ -75,7 +75,7 @@
 | 8/13/24 | 721 | Accounts Merge                         | Medium     | [Here](https://leetcode.com/problems/accounts-merge/description/)                                              |
 | 10/24/24| 167 | Two Sum II - Input Array Is Sorted     | Medium     | [Here](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)                            |
 | 10/24/24| 15  | 3Sum                                   | Medium     | [Here](https://leetcode.com/problems/3sum/description/)                                                        |
-| 8/23/24 | 42  | Trapping Rain Water                    | Hard       | [Here](https://leetcode.com/problems/trapping-rain-water/description/)                                         |
+| 11/30/24| 42  | Trapping Rain Water                    | Hard       | [Here](https://leetcode.com/problems/trapping-rain-water/description/)                                         |
 | 10/28/24| 150 | Evaluate Reverse Polish Notation       | Medium     | [Here](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)                            |
 | 10/28/24| 22  | Generate Parentheses                   | Medium     | [Here](https://leetcode.com/problems/generate-parentheses/description/)                                        |
 | 10/28/24| 739 | Daily Temperatures                     | Medium     | [Here](https://leetcode.com/problems/daily-temperatures/description/)                                          |
@@ -170,3 +170,4 @@
 | 10/28/24| 2   | Add Two Numbers                        | Medium     | [Here](https://leetcode.com/problems/add-two-numbers/description/)                                             |
 | 11/26/24| 323 | Number of Connected Components In ...  | Medium     | [Here](https://leetcode.com/problems/add-two-numbers/description/)                                             |
 | 11/27/24| 253 | Meeting Rooms II                       | Medium     | [Here](https://leetcode.com/problems/meeting-rooms-ii/description/)                                            |
+| 11/30/24| 76  | Minimum Window Substring               | Hard       | [Here](https://leetcode.com/problems/minimum-window-substring/description/)                                    |

@@ -1,61 +1,22 @@
-1. Share questions you would ask to help understand the question:
-- Can there be a case where there is only one nonzero element?
+1. List out any clarifying questions:
+- Are there sides at the ends of the list?
 
-2. List out 2-3 types of problems that we might consider and our belief of match: Likely, Neutral, Unlikely
-- Stack (Likely)
-- Two pointers (Likely)
+2. List out 1-3 data structures/algorithms that could be useful:
+- Sliding Windows / 2 Pointer
 
-3. Write out in plain English what you want to do: 
-- What this has got me thinking, is to use use two pointers right away 
-- Starting from left to right, have one pointer that is stationary. And then another that keeps going until it reaches a height of p1 or greater
-- Then, add the heights of each index minus p1 to an output int
+3. Break down the problem into subproblems, provide psuedocode for these subproblems:
+- Just going from left to right, it looks like I just need to be concerned about how much water I can contain until I find a height greater than my current height
+- Until that point, I can just add any differences in heights to some current sum variable
+- Then, once I find a height that is >= my starting height, I can consider the container complete, and add it to my cummulative sum 
+- By thinking of more and more edge cases, the less correct this solution appears to be. If I were to go down this route, I would end up adding multiple if and while conditions, complicating the code and making it harder and harder to follow. 
 
-4. Translate each sub-problem into pseudocode:
-- initialize a stack and an output int 
-- Starting from the left and then incrementing until the end:
-  - have a pointer p1 that increments until it reaches a nonzero number
-    - once reached, create a pointer p2 that increments so long as it does not encounter a number that is greater or equal to p1 
-      - if that number is not reached, append the current height of p2 to a stack
-      - else: if p2 reaches a height that is p1 or greater, enter another loop
-        - until the stack is empty
-          - add the value of p1 - popped value to the output
-- return the output
+- Rethinking about the problem, the logic can be made simplier if I think about each height in its own container of length 1. For a height of h, the most amount of water that can be contained at this index is the minimum of (the max height to its left, the max height to its right) minus whatever its current height is * 1. 
+- To break this down: "minimum of (the max height to its left, the max height to its right)":
+    - The max height of left and right are needed to determine how the biggest possible container it can be apart of
+    - The min is needed, as the container is constrained by the smaller height, as water cannot be curved, it is flat. 
 
-5. Translate the pseudocode into Python and share your final answer:
-  <!-- class Solution:
-    def trap(self, height: List[int]) -> int:
-        output = 0
-        p1 = 0
-        stack = []
-        spilled = False
+4. Assess the space/time complexity:
+- Space: O(n)
+- Time: O(n)
 
-        while p1 != len(height)-1:
-            if height[p1] == 0:
-                p1 += 1 
-                continue
-            p2 = p1 + 1
-            while height[p2] < height[p1]:
-                if p2 == len(height) - 1:
-                    stack.append(height[p2])
-                    spilled = True
-                    break
-                stack.append(height[p2])
-                p2 += 1
-            if spilled: 
-                right = stack.pop()
-                while stack:
-                    temp = stack.pop()
-                    if right > temp:
-                        output += right - temp
-                    else:
-                        right = temp
-                return output
-            while stack:
-                output += height[p1] - stack.pop()
-            p1 = p2
-        return output  -->
-
-6. Share at least one strong/weak area of your algorithm or future potential work:
-- One strong area is that it utitilizes stacks to track all of the elevations that were traveresd, and once processed, they can be skipped
-- One weak area is that I did not initialling consider the "spilled" test cases, like [4,2,3], where there was space for water to be trapped
-  - While it was addressed, I am not a big fan of the nested while and if statements that addressed it, even if it works
+5. Optional - Give any ways you would improve your solution:
