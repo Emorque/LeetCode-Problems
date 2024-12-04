@@ -80,12 +80,12 @@
 | 10/28/24| 22  | Generate Parentheses                   | Medium     | [Here](https://leetcode.com/problems/generate-parentheses/description/)                                        |
 | 10/28/24| 739 | Daily Temperatures                     | Medium     | [Here](https://leetcode.com/problems/daily-temperatures/description/)                                          |
 | 10/28/24| 853 | Car Fleet                              | Medium     | [Here](https://leetcode.com/problems/car-fleet/description/)                                                   |
-| 8/28/24 | 84  | Largest Rectangle in Histogram         | Hard       | [Here](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)                              |
+| 12/04/24| 84  | Largest Rectangle in Histogram         | Hard       | [Here](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)                              |
 | 10/28/24| 74  | Search a 2D Matrix                     | Medium     | [Here](https://leetcode.com/problems/search-a-2d-matrix/description/)                                          |
 | 10/28/24| 153 |Find Minimum in Rotated Sorted Array    | Medium     | [Here](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)                        |
 | 10/28/24| 33  | Search in Rotated Sorted Array         | Medium     | [Here](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)                              |
 | 10/24/24| 3   | Longest Substring W/o Repeating Chars. | Medium     | [Here](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)              |
-| 8/29/24 | 4   | Median of Two Sorted Arrays            | Hard       | [Here](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                 |
+| 12/04/24| 4   | Median of Two Sorted Arrays            | Hard       | [Here](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)                                 |
 | 10/28/24| 981 | Time Based Key-Value Store             | Medium     | [Here](https://leetcode.com/problems/time-based-key-value-store/description/)                                  |
 | 10/24/24| 424 | Longest Repeating Character Replacement| Medium     | [Here](https://leetcode.com/problems/longest-repeating-character-replacement/description/)                     |
 | 10/24/24| 567 | Permutation in String                  | Medium     | [Here](https://leetcode.com/problems/permutation-in-string/description/)                                       |
