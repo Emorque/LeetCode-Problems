@@ -171,3 +171,5 @@
 | 11/26/24| 323 | Number of Connected Components In ...  | Medium     | [Here](https://leetcode.com/problems/add-two-numbers/description/)                                             |
 | 11/27/24| 253 | Meeting Rooms II                       | Medium     | [Here](https://leetcode.com/problems/meeting-rooms-ii/description/)                                            |
 | 11/30/24| 76  | Minimum Window Substring               | Hard       | [Here](https://leetcode.com/problems/minimum-window-substring/description/)                                    |
+| 12/07/24| 23  | Merge k Sorted Lists                   | Hard       | [Here](https://leetcode.com/problems/minimum-window-substring/description/)                                    |
+| 12/07/24| 25  | Reverse Nodes in k-Group               | Hard       | [Here](https://leetcode.com/problems/minimum-window-substring/description/)                                    |
