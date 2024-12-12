@@ -175,3 +175,4 @@
 | 12/07/24| 25  | Reverse Nodes in k-Group               | Hard       | [Here](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)                                    |
 | 12/08/24| 124 | Binary Tree Maximum Path Sum           | Hard       | [Here](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)                                |
 | 12/08/24| 297 | Serialize and Deserialize Binary Tree  | Hard       | [Here](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)                       |
+| 12/12/24| 295 | Find Median from Data Stream           | Hard       | [Here](https://leetcode.com/problems/find-median-from-data-stream/description/)                                |
